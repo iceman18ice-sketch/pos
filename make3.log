@@ -1,0 +1,22 @@
+[  0%] Built target POSSystem_autogen_timestamp_deps
+[  3%] Automatic MOC and UIC for target POSSystem
+[  3%] Built target POSSystem_autogen
+[  7%] Building CXX object CMakeFiles/POSSystem.dir/src/main.cpp.obj
+[ 11%] Building CXX object CMakeFiles/POSSystem.dir/src/views/MainWindow.cpp.obj
+[ 15%] Building CXX object CMakeFiles/POSSystem.dir/src/views/DashboardWidget.cpp.obj
+[ 19%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj
+[ 23%] Building CXX object CMakeFiles/POSSystem.dir/src/views/StockWidget.cpp.obj
+[ 26%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ReportsWidget.cpp.obj
+[ 30%] Building CXX object CMakeFiles/POSSystem.dir/src/views/CustomersWidget.cpp.obj
+[ 34%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SettingsWidget.cpp.obj
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\SettingsWidget.cpp: In lambda function:
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\SettingsWidget.cpp:153:27: error: 'QComboBox' does not name a type
+  153 |     auto *roleCombo = new QComboBox;
+      |                           ^~~~~~~~~
+[ 38%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/SidebarWidget.cpp.obj
+[ 42%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/StatCard.cpp.obj
+mingw32-make[2]: *** [CMakeFiles\POSSystem.dir\build.make:334: CMakeFiles/POSSystem.dir/src/views/SettingsWidget.cpp.obj] Error 1
+mingw32-make[2]: *** Waiting for unfinished jobs....
+[ 46%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/InvoiceTable.cpp.obj
+mingw32-make[1]: *** [CMakeFiles\Makefile2:89: CMakeFiles/POSSystem.dir/all] Error 2
+mingw32-make: *** [Makefile:90: all] Error 2

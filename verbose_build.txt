@@ -1,0 +1,4438 @@
+﻿C:\msys64\mingw64\bin\cmake.exe -SC:\Users\HP\.gemini\antigravity\scratch\pos-system -BC:\Users\HP\.gemini\antigravity\scratch\pos-system\build --check-build-system CMakeFiles\Makefile.cmake 0
+C:\msys64\mingw64\bin\cmake.exe -E cmake_progress_start C:\Users\HP\.gemini\antigravity\scratch\pos-system\build\CMakeFiles C:\Users\HP\.gemini\antigravity\scratch\pos-system\build\\CMakeFiles\progress.marks
+C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\Makefile2 all
+mingw32-make[1]: Entering directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\POSSystem_autogen_timestamp_deps.dir\build.make CMakeFiles/POSSystem_autogen_timestamp_deps.dir/depend
+mingw32-make[2]: Entering directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+C:\msys64\mingw64\bin\cmake.exe -E cmake_depends "MinGW Makefiles" C:\Users\HP\.gemini\antigravity\scratch\pos-system C:\Users\HP\.gemini\antigravity\scratch\pos-system C:\Users\HP\.gemini\antigravity\scratch\pos-system\build C:\Users\HP\.gemini\antigravity\scratch\pos-system\build C:\Users\HP\.gemini\antigravity\scratch\pos-system\build\CMakeFiles\POSSystem_autogen_timestamp_deps.dir\DependInfo.cmake "--color=" POSSystem_autogen_timestamp_deps
+mingw32-make[2]: Leaving directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\POSSystem_autogen_timestamp_deps.dir\build.make CMakeFiles/POSSystem_autogen_timestamp_deps.dir/build
+mingw32-make[2]: Entering directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+mingw32-make[2]: Nothing to be done for 'CMakeFiles/POSSystem_autogen_timestamp_deps.dir/build'.
+mingw32-make[2]: Leaving directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+[  0%] Built target POSSystem_autogen_timestamp_deps
+C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\POSSystem_autogen.dir\build.make CMakeFiles/POSSystem_autogen.dir/depend
+mingw32-make[2]: Entering directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+C:\msys64\mingw64\bin\cmake.exe -E cmake_depends "MinGW Makefiles" C:\Users\HP\.gemini\antigravity\scratch\pos-system C:\Users\HP\.gemini\antigravity\scratch\pos-system C:\Users\HP\.gemini\antigravity\scratch\pos-system\build C:\Users\HP\.gemini\antigravity\scratch\pos-system\build C:\Users\HP\.gemini\antigravity\scratch\pos-system\build\CMakeFiles\POSSystem_autogen.dir\DependInfo.cmake "--color=" POSSystem_autogen
+mingw32-make[2]: Leaving directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\POSSystem_autogen.dir\build.make CMakeFiles/POSSystem_autogen.dir/build
+mingw32-make[2]: Entering directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+[  3%] Automatic MOC and UIC for target POSSystem
+C:\msys64\mingw64\bin\cmake.exe -E cmake_autogen C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/CMakeFiles/POSSystem_autogen.dir/AutogenInfo.json ""
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_CustomersWidget.cpp" from "SRC:/src/views/CustomersWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_CustomersWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/CustomersWidget.h
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_DashboardWidget.cpp" from "SRC:/src/views/DashboardWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_DashboardWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/DashboardWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_DashboardWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_LoginWindow.cpp" from "SRC:/src/views/LoginWindow.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_LoginWindow.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/LoginWindow.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_CustomersWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_MainWindow.cpp" from "SRC:/src/views/MainWindow.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_MainWindow.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/MainWindow.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_LoginWindow.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_ProductsWidget.cpp" from "SRC:/src/views/ProductsWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_ProductsWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/ProductsWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_MainWindow.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_PurchasesWidget.cpp" from "SRC:/src/views/PurchasesWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_PurchasesWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/PurchasesWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_ProductsWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_ReportsWidget.cpp" from "SRC:/src/views/ReportsWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_ReportsWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/ReportsWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_PurchasesWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_SalesWidget.cpp" from "SRC:/src/views/SalesWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_SalesWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/SalesWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_ReportsWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_SettingsWidget.cpp" from "SRC:/src/views/SettingsWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_SettingsWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/SettingsWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_SalesWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_StockWidget.cpp" from "SRC:/src/views/StockWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/Z3L7HTGYLD/moc_StockWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/views/StockWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_SettingsWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_InvoiceTable.cpp" from "SRC:/src/widgets/InvoiceTable.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/RZ4CM6YYJ6/moc_InvoiceTable.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/widgets/InvoiceTable.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/Z3L7HTGYLD/moc_StockWidget.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_SearchBar.cpp" from "SRC:/src/widgets/SearchBar.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/RZ4CM6YYJ6/moc_SearchBar.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/widgets/SearchBar.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_InvoiceTable.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_SidebarWidget.cpp" from "SRC:/src/widgets/SidebarWidget.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/RZ4CM6YYJ6/moc_SidebarWidget.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/widgets/SidebarWidget.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_SearchBar.cpp.d"
+AutoMoc: Generating "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_StatCard.cpp" from "SRC:/src/widgets/StatCard.h", because its dependency "C:/msys64/mingw64/include/sdks/_mingw_ddk.h" vanished.
+C:/msys64/mingw64/share/qt6/bin/moc.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 -IC:/Users/HP/.gemini/antigravity/scratch/pos-system/src -IC:/msys64/mingw64/include/qt6/QtWidgets -IC:/msys64/mingw64/include/qt6 -IC:/msys64/mingw64/include/qt6/QtCore -IC:/msys64/mingw64/share/qt6/mkspecs/win32-g++ -IC:/msys64/mingw64/include/qt6/QtGui -IC:/msys64/mingw64/include/qt6/QtSql -IC:/msys64/mingw64/include/qt6/QtCharts -IC:/msys64/mingw64/include/qt6/QtOpenGL -IC:/msys64/mingw64/include/qt6/QtOpenGLWidgets -IC:/msys64/mingw64/include/qt6/QtSvg -IC:/msys64/mingw64/include -IC:/msys64/mingw64/include/c++/15.2.0 -IC:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32 -IC:/msys64/mingw64/include/c++/15.2.0/backward -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed --include C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/moc_predefs.h --output-dep-file -o C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/RZ4CM6YYJ6/moc_StatCard.cpp C:/Users/HP/.gemini/antigravity/scratch/pos-system/src/widgets/StatCard.h
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_SidebarWidget.cpp.d"
+AutoMoc: Reading dependencies from "SRC:/build/POSSystem_autogen/RZ4CM6YYJ6/moc_StatCard.cpp.d"
+AutoMoc: Touching MOC compilation "SRC:/build/POSSystem_autogen/mocs_compilation.cpp"
+AutoMoc: Merging MOC dependencies into "SRC:/build/POSSystem_autogen/deps"
+AutoGen: Writing the parse cache file "SRC:/build/CMakeFiles/POSSystem_autogen.dir/ParseCache.txt"
+C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/timestamp
+mingw32-make[2]: Leaving directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+[  3%] Built target POSSystem_autogen
+C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\POSSystem.dir\build.make CMakeFiles/POSSystem.dir/depend
+mingw32-make[2]: Entering directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+[  7%] Automatic MOC and UIC for target POSSystem
+C:\msys64\mingw64\bin\cmake.exe -E cmake_autogen C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/CMakeFiles/POSSystem_autogen.dir/AutogenInfo.json ""
+AutoMoc: Merging MOC dependencies into "SRC:/build/POSSystem_autogen/deps"
+C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/POSSystem_autogen/timestamp
+C:\msys64\mingw64\bin\cmake.exe -E cmake_depends "MinGW Makefiles" C:\Users\HP\.gemini\antigravity\scratch\pos-system C:\Users\HP\.gemini\antigravity\scratch\pos-system C:\Users\HP\.gemini\antigravity\scratch\pos-system\build C:\Users\HP\.gemini\antigravity\scratch\pos-system\build C:\Users\HP\.gemini\antigravity\scratch\pos-system\build\CMakeFiles\POSSystem.dir\DependInfo.cmake "--color=" POSSystem
+Dependencies file "POSSystem_autogen/deps" is newer than depends file "C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/CMakeFiles/POSSystem.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj.d" is newer than depends file "C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/CMakeFiles/POSSystem.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/POSSystem.dir/src/database/DatabaseManager.cpp.obj.d" is newer than depends file "C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/CMakeFiles/POSSystem.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/POSSystem.dir/src/main.cpp.obj.d" is newer than depends file "C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/CMakeFiles/POSSystem.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/POSSystem.dir/src/models/Product.cpp.obj.d" is newer than depends file "C:/Users/HP/.gemini/antigravity/scratch/pos-system/build/CMakeFiles/POSSystem.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target POSSystem
+mingw32-make[2]: Leaving directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\POSSystem.dir\build.make CMakeFiles/POSSystem.dir/build
+mingw32-make[2]: Entering directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+[ 11%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj
+C:\msys64\mingw64\bin\c++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_SQL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -DWINVER=0x0A00 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN32_WINNT=0x0A00 -D_WIN64 @CMakeFiles/POSSystem.dir/includes_CXX.rsp -std=gnu++17 -finput-charset=UTF-8 -fexec-charset=UTF-8 -Wno-template-body -MD -MT CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\POSSystem.dir\POSSystem_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\POSSystem.dir\POSSystem_autogen\mocs_compilation.cpp.obj -c C:\Users\HP\.gemini\antigravity\scratch\pos-system\build\POSSystem_autogen\mocs_compilation.cpp
+mingw32-make.exe : In 
+file included from C:/ms
+ys64/mingw64/include/qt6
+/QtCore/qttypetraits.h:1
+5,
+At line:1 char:139
++ ... \scratch\pos-syste
+m\build"; & 
+mingw32-make.exe 
+VERBOSE=1 2>&1 | Out-F 
+...
++                       
+          ~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : (In file include.   
+ ..ypetraits.h:15,:S    
+tring) [], RemoteEx    
+ception
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qforeach.h:11
+,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qglobal.h:55,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtGui/qtguiglobal.h:
+7,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qtwidgetsg
+lobal.h:8,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qtableview
+.h:8,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qtablewidg
+et.h:8,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/QTableWidg
+et:1,
+                 from C:
+/Users/HP/.gemini/antigr
+avity/scratch/pos-system
+/src/views/CustomersWidg
+et.h:2,
+                 from C:
+\Users\HP\.gemini\antigr
+avity\scratch\pos-system
+\build\POSSystem_autogen
+\Z3L7HTGYLD/moc_Customer
+sWidget.cpp:9,
+                 from C:
+\Users\HP\.gemini\antigr
+avity\scratch\pos-system
+\build\POSSystem_autogen
+\mocs_compilation.cpp:2:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+7: error: stray '\204' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |       ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+10: error: stray '\225' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+11: error: stray '\300' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+       ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+12: error: stray '\333' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+           ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+44: error: stray '\213' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+              ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+46: error: stray '\361' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+47: error: stray '\355' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                       
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+48: error: stray '\262' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+52: error: stray '\204' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+          ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+54: error: stray '\220' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+               ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+56: error: stray '\342' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                    ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+57: error: stray '\213' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+58: error: stray '\301' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+    ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+62: error: stray '\274' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+           ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+63: error: stray '\320' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+               ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+64: error: stray '\36' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                   
+^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+65: error: stray '\235' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+66: error: stray '\302' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+       ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+68: error: stray '\177' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                   
+^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+71: error: stray '\230' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+     ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+72: error: stray '\4' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+         ^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+74: error: stray '\217' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                  ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+75: error: stray '\266' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                      
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+77: error: stray '\177' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+   ^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+82: error: stray '\252' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+               ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+85: error: stray '\261' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                     
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+87: error: stray '\230' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+  ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+89: error: stray '\223' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+       ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+90: error: stray '\273' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+           ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+91: error: stray '\237' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+               ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+92: error: stray '\240' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+95: error: stray '\275' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+ ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+96: error: stray '\212' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+     ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+98: error: stray '\256' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+          ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+102: error: stray 
+'\261' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                 ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+104: error: stray 
+'\323' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                      
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+106: error: stray '\20' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+   ^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+107: error: stray 
+'\320' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+           ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+114: error: stray 
+'\177' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                  
+^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+115: error: stray 
+'\374' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+  ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+116: error: stray 
+'\204' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+      ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+118: error: stray 
+'\234' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+           ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+120: error: stray '\33' 
+in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                ^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+121: error: stray 
+'\276' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+122: error: stray 
+'\201' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+    ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+124: error: stray 
+'\247' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+         ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+126: error: stray 
+'\237' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+              ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+128: error: stray 
+'\270' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+129: error: stray 
+'\254' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                       
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+130: error: stray '@' 
+in program
+ 2929 |     coc┼░ـ└█"oY
+e3طkâئ3¤7┼V╡[ةغH║|9
+إ"Q╟║ïxًو▓<eUXnظï┴9sW╝
+╨إ┬╒î4%ءU╢2R$0<زO&▒
+<ء}ô╗ابev╜èP«=c>▒p╙[╨:╥
+╡مثْHh╩ْⁿ=£n╛qدAاk╕ش
+@أ~╖r
+      |                 
+                        
+                        
+                        
+                        
+                 ^
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+131: error: stray 
+'\232' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+    ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+133: error: stray 
+'\267' in program
+ 2929 |     co<84>c<U+01
+70><95><c0><db>"oYe3<U+0
+01B><8f><e1>k<U+001C><83
+><9e>3<94>7<c5>V<U+0007>
+<b5>[<86><a1><e4>H<ba>|9
+<9d>"Q<U+01FA><8b>x<f1><
+ed><b2><eU<84>X<90>n<e2>
+<8b><c1>9sW<bc><d0><U+00
+1E><9d><c2><U+054C><U+00
+7F>4%<98><U+0004>U<8f><b
+6>2<U+007F>R$0<<aa>O&<b1
+><<98>}<93><bb><9f><a0>e
+v<bd><8a>P<ae>=c><b1>p<d
+3>[<U+0010><d0>:<U+04B5>
+<U+A8D2>Hh<U+0292><U+007
+F><fc><84>=<9c>n<U+001B>
+<be><81>q<a7>A<9f>k<b8><
+ac>@<9a>~<b7>r
+      |                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+         ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+1: error: stray '\222' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      | ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+2: error: stray '\241' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |     ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+3: error: stray '\231' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |         ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+5: error: stray '\335' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |              
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+6: error: stray '\307' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+ ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+10: error: stray '\22' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+        ^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+13: error: stray '\35' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                  
+^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+14: error: stray '\36' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+  ^~~~~~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+16: error: stray '\201' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+           ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+17: error: stray '\261' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+               ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+18: error: stray '\247' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+19: error: stray '\253' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                       
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+20: error: stray '\337' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+   ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+24: error: stray '\220' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+          ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+25: error: stray '\232' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+              ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+26: error: stray '\304' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                  ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+27: error: stray '\307' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                      
+^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+28: error: stray '\353' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                        
+  ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+30: error: stray '\331' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                        
+       ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+34: error: stray '\217' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                        
+              ^~~~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+35: error: stray '\32' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                        
+                  ^
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+37: error: stray '\22' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                        
+                    ^
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2930:
+38: error: stray '\250' 
+in program
+ 2930 | <92><a1><99>9<dd
+><c7>]6b<U+0012>o8<U+001
+D><U+001E>M<81><b1><a7><
+ab><df>M6v<90><9a><c4><c
+7><eb>k<d9>zaq<8f>
+      |                 
+                        
+                        
+                        
+                     ^
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+1: error: stray '\26' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+3: error: stray '\306' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+6: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+8: error: stray '\262' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+9: error: stray '\265' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+10: error: stray '\225' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+12: error: stray '\311' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+14: error: stray '\216' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+16: error: stray '\231' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+19: error: stray '\341' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+22: error: stray '`' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+31: error: stray '\270' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+32: error: stray '\326' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+35: error: stray '\237' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+36: error: stray '\245' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+37: error: stray '\272' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+38: error: stray '`' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+39: error: stray '\207' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+40: error: stray '\237' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+41: error: stray '\230' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+44: error: stray '\221' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+46: error: stray '\210' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+50: error: stray '\343' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+52: error: stray '\243' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+54: error: stray '\304' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+55: error: stray '\345' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+56: error: stray '\263' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+58: error: stray '\355' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+60: error: stray '\202' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+62: error: stray '\301' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+63: error: stray '\251' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+65: error: stray '\203' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+78: error: stray '\211' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+82: error: stray '\314' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+84: error: stray '\' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+85: error: stray '\324' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+88: error: stray '\233' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+89: error: stray '\331' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+94: error: stray '\257' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+95: error: stray '\223' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+96: error: stray '\252' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+97: error: stray '\36' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+98: error: stray '\230' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+100: error: stray 
+'\323' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+108: error: stray 
+'\231' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+109: error: stray 
+'\215' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+111: error: stray '\26' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+112: error: stray 
+'\231' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+113: error: stray 
+'\367' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+118: error: stray 
+'\224' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+119: error: stray 
+'\226' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+120: error: stray 
+'\370' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+122: error: stray 
+'\253' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+123: error: stray 
+'\264' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+126: error: stray 
+'\205' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+127: error: stray 
+'\310' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+128: error: stray 
+'\371' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+129: error: stray 
+'\232' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+130: error: stray '\32' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+131: error: stray 
+'\233' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+132: error: missing 
+terminating " character
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+1: error: stray '\24' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+2: error: stray '\201' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+4: error: stray '\252' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+6: error: stray '\266' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+9: error: stray '\204' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+10: error: stray '\247' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+12: error: stray '\231' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+13: error: stray '\246' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+19: error: stray '\275' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+21: error: stray '\205' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+23: error: stray '\3' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+25: error: stray '\274' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+26: error: stray '\225' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+27: error: stray '\376' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+29: error: stray '\312' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+30: error: stray '\34' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+34: error: stray '\212' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+35: error: stray '\10' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+37: error: stray '\250' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+39: error: stray '\365' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+41: error: stray '\262' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+42: error: stray '\342' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+44: error: stray '\266' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+45: error: stray '\32' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+49: error: stray '\251' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+51: error: stray '\227' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+54: error: stray '\241' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+55: error: stray '\235' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+56: error: stray '\215' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+57: error: stray '\207' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+58: error: stray '\255' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+59: error: stray '\227' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+60: error: stray '\301' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+61: error: stray '\322' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+63: error: stray '\224' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+64: error: stray '\232' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+65: error: stray '\222' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+66: error: stray '\244' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+67: error: stray '`' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+69: error: stray '\223' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+76: error: stray '\225' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2932:
+82: error: stray '\2' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+1: error: stray '\275' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+2: error: stray '\225' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+4: error: stray '\207' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+8: error: stray '\245' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+9: error: stray '\226' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+10: error: stray '\262' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+18: error: stray '\303' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+20: error: stray '\250' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+21: error: stray '\250' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+22: error: stray '\334' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+24: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+25: error: stray '\216' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+26: error: stray '\364' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+30: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+31: error: stray '\234' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+34: error: stray '\251' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+35: error: stray '\236' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+36: error: stray '\210' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+37: error: stray '\275' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+38: error: stray '\341' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+39: error: stray '\201' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+45: error: stray '\' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+48: error: stray '\30' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+50: error: stray '\201' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+54: error: stray '\310' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+56: error: stray '\204' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+57: error: stray '\201' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+60: error: stray '\355' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+62: error: stray '\262' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+63: error: stray '\277' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+64: error: stray '\2' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+66: error: stray '\301' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+69: error: stray '\242' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+70: error: stray '\351' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+73: error: stray '\247' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+77: error: stray '\317' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+80: error: stray '\237' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+81: error: stray '\247' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+83: error: stray '\230' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+85: error: stray '\210' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2933:
+89: error: missing 
+terminating " character
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+4: error: stray '\206' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+5: error: stray '\274' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+7: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+12: error: stray '\27' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+13: error: stray '\352' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+14: error: stray '\177' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+15: error: stray '\254' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+21: error: stray '\257' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+23: error: stray '\204' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+25: error: stray '\255' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+26: error: stray '\10' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+27: error: stray '\231' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+28: error: stray '\263' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+29: error: stray '\203' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+30: error: stray '\266' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+31: error: stray '\232' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+226: error: stray 
+'\203' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+230: error: stray 
+'\336' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+233: error: stray 
+'\221' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+235: error: stray 
+'\203' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+236: error: stray 
+'\360' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+239: error: stray 
+'\232' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+240: error: stray 
+'\276' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+242: error: stray 
+'\215' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+243: error: stray 
+'\263' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+244: error: stray 
+'\243' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+245: error: stray 
+'\242' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+250: error: stray 
+'\204' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+251: error: stray 
+'\202' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+257: error: stray 
+'\233' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+260: error: stray 
+'\357' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+262: error: stray 
+'\205' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+265: error: stray '\35' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+266: error: stray 
+'\204' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+268: error: stray 
+'\302' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+273: error: stray 
+'\222' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+275: error: stray 
+'\211' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+2: error: stray '\326' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+3: error: stray '\23' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+7: error: stray '`' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+9: error: stray '\362' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+11: error: stray '\307' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+12: error: stray '\3' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+13: error: stray '\217' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+14: error: stray '\214' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+15: error: stray '\211' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+18: error: stray '\327' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+20: error: stray '\233' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+21: error: stray '\240' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2935:
+24: error: missing 
+terminating ' character
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+1: error: stray '\207' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+2: error: stray '\36' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+5: error: stray '\233' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+7: error: stray '\246' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+10: error: stray '\300' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+11: error: stray '\314' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+14: error: stray '\356' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+16: error: stray '\214' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+18: error: stray '\22' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+20: error: stray '\270' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+23: error: stray '\271' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+26: error: stray '\22' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+27: error: stray '\265' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+28: error: stray '\215' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+29: error: stray '\32' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+34: error: stray '\260' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+35: error: stray '\233' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+36: error: stray '\300' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+37: error: stray '\307' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+40: error: stray '\31' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+41: error: stray '\16' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+43: error: stray '\204' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+44: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+48: error: stray '\304' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2936:
+50: error: missing 
+terminating " character
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+1: error: stray '\222' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+3: error: stray '\217' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+9: error: stray '\263' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+10: error: stray '\336' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+11: error: stray '@' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+12: error: stray '\24' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+13: error: stray '\243' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+16: error: stray '`' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+19: error: stray '\222' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+20: error: stray '\276' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+23: error: stray '\205' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+25: error: stray '\300' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+27: error: stray '\' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+29: error: stray '\216' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+30: error: stray '\276' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+34: error: stray '\245' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+35: error: stray '\217' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+36: error: stray '\306' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+37: error: stray '\342' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+39: error: stray '\262' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+40: error: stray '\236' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+41: error: stray '\205' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+42: error: stray '\232' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+43: error: stray '\212' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+48: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+49: error: stray '\205' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+50: error: stray '\212' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+51: error: stray '\273' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+52: error: stray '\267' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+53: error: stray '\205' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+56: error: stray '\335' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+57: error: stray '\' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+59: error: stray '\257' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+60: error: stray '\306' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+62: error: stray '\216' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+65: error: stray '\223' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+68: error: stray '\16' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+75: error: stray '\' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+78: error: stray '\250' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+81: error: stray '\240' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+82: error: stray '\212' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+83: error: stray '\203' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+87: error: stray '\207' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+89: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+90: error: stray '\235' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+92: error: stray '\311' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+94: error: stray '\211' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+95: error: stray '\242' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+97: error: stray '\373' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+100: error: missing 
+terminating " character
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+5: error: stray '\370' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+7: error: stray '\31' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+11: error: stray '\227' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+16: error: stray '\256' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+17: error: stray '\321' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+18: error: stray '\357' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+20: error: stray '\305' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+23: error: stray '\245' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+24: error: stray '\304' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+25: error: stray '\300' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+26: error: stray '\252' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+28: error: stray '\330' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+32: error: stray '\276' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+35: error: stray '\222' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+36: error: missing 
+terminating " character
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+1: error: stray '\16' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+7: error: stray '\215' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+13: error: stray '\251' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+16: error: stray '\274' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+21: error: stray '\236' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+22: error: stray '\234' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+26: error: stray '\307' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+28: error: stray '\30' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+32: error: stray '\367' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+35: error: stray '\272' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+38: error: stray '\234' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+39: error: stray '\177' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+40: error: stray '\234' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+42: error: stray '\204' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+43: error: stray '\352' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+45: error: stray '\224' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+47: error: stray '\351' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+49: error: stray '\210' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+55: error: stray '\306' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+57: error: stray '\212' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+59: error: stray '\304' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+67: error: stray '\214' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+68: error: stray '\205' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+69: error: stray '\302' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+71: error: stray '\214' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+73: error: stray '\222' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+74: error: stray '\230' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+79: error: stray '\326' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+80: error: stray '\314' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+82: error: stray '\246' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+83: error: stray '\252' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+86: error: stray '\232' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+87: error: stray '\340' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+88: error: stray '\302' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+90: error: stray '\300' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+91: error: stray '\254' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+93: error: stray '\213' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+96: error: stray '\17' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+98: error: stray '\316' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+100: error: stray '\24' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+101: error: stray 
+'\217' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+103: error: stray '`' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+104: error: stray 
+'\243' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+108: error: stray '\26' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+109: error: stray 
+'\230' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+111: error: stray '`' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+113: error: stray '\27' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+116: error: stray 
+'\261' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+119: error: stray 
+'\203' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+123: error: stray 
+'\340' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+124: error: stray 
+'\215' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+125: error: stray 
+'\270' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+126: error: stray 
+'\221' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+133: error: stray 
+'\200' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+137: error: stray 
+'\234' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+138: error: stray 
+'\205' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+140: error: stray 
+'\211' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+141: error: stray 
+'\221' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+147: error: stray 
+'\214' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+148: error: stray 
+'\355' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+149: error: stray '\3' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+153: error: stray '\10' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+155: error: stray 
+'\330' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+159: error: stray 
+'\206' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+162: error: missing 
+terminating ' character
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+3: error: stray '\270' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+4: error: stray '\222' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+5: error: stray '\215' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+6: error: stray '\244' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+8: error: stray '\227' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+9: error: stray '\226' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+10: error: stray '\237' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+11: error: stray '\252' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+13: error: stray '\237' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+15: error: stray '\365' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+16: error: stray '\233' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2940:
+18: error: stray '\217' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+5: error: stray '\275' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+6: error: stray '\231' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+9: error: stray '\260' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+10: error: stray '\200' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+11: error: stray '\211' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+14: error: stray '\' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+16: error: stray '\202' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+17: error: stray '\251' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+19: error: stray '\267' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+24: error: stray '\304' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+26: error: stray '\226' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+28: error: stray '\211' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+29: error: stray '\322' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+31: error: stray '#' in 
+program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+35: error: stray '\343' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+38: error: stray '\257' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+40: error: stray '\301' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+41: error: stray '\32' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+42: error: stray '\31' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+43: error: stray '\232' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+47: error: stray '\212' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+49: error: stray '\1' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+50: error: stray '\223' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+51: error: stray '\223' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+52: error: stray '\222' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+57: error: stray '\277' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+58: error: stray '\246' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+60: error: stray '\351' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+63: error: stray '\250' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+65: error: stray '\347' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+67: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+68: error: stray '\220' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+71: error: stray '\214' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+75: error: stray '\216' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+76: error: stray '\360' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+78: error: stray '\254' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+79: error: stray '\252' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+80: error: stray '\214' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+81: error: stray '\33' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+82: error: stray '\346' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+84: error: stray '\207' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+86: error: stray '\242' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+88: error: stray '\303' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+90: error: stray '\247' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+94: error: stray '\223' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+96: error: stray '\260' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+98: error: stray '\223' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+99: error: digit 
+separator outside digit 
+sequence
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+102: error: stray 
+'\274' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+105: error: stray 
+'\323' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+109: error: stray 
+'\243' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+113: error: stray '@' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+114: error: stray 
+'\233' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+115: error: stray '\22' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+119: error: stray '\26' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+120: error: stray 
+'\217' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+125: error: stray 
+'\201' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+129: error: stray 
+'\201' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+130: error: stray '\6' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+131: error: stray '\17' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+136: error: stray 
+'\252' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+137: error: stray 
+'\262' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+139: error: stray '\16' 
+in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+140: error: stray 
+'\356' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+141: error: stray 
+'\242' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+142: error: stray 
+'\356' in program
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+In file included from C:
+/msys64/mingw64/include/
+c++/15.2.0/functional:55
+,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qcomparehelpe
+rs.h:28,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qcompare.h:63
+9,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qnamespace.h:
+13,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qobjectdefs.h
+:12,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtGui/qwindowdefs.h:
+8,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qwidget.h:
+9,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qframe.h:9
+,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qabstracts
+crollarea.h:9,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qabstracti
+temview.h:9,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qtableview
+.h:9:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+In file included from C:
+/msys64/mingw64/include/
+c++/15.2.0/bits/hashtabl
+e_policy.h:34,
+                 from C:
+/msys64/mingw64/include/
+c++/15.2.0/bits/hashtabl
+e.h:37,
+                 from C:
+/msys64/mingw64/include/
+c++/15.2.0/bits/unordere
+d_map.h:33,
+                 from C:
+/msys64/mingw64/include/
+c++/15.2.0/unordered_map
+:43,
+                 from C:
+/msys64/mingw64/include/
+c++/15.2.0/functional:65
+:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+In file included from C:
+/msys64/mingw64/include/
+c++/15.2.0/bits/memory_r
+esource.h:49,
+                 from C:
+/msys64/mingw64/include/
+c++/15.2.0/unordered_map
+:62:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+In file included from C:
+/msys64/mingw64/include/
+c++/15.2.0/bits/unique_p
+tr.h:37,
+                 from C:
+/msys64/mingw64/include/
+c++/15.2.0/memory:80,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qobjectdefs_i
+mpl.h:17,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qobjectdefs.h
+:13:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+In file included from C:
+/msys64/mingw64/include/
+qt6/QtCore/qarraydataops
+.h:17,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qarraydatapoi
+nter.h:7,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qbytearray.h:
+12,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qstringview.h
+:11,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qchar.h:723,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qstring.h:15,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qobject.h:11,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qwidget.h:
+10:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+In file included from C:
+/msys64/mingw64/include/
+c++/15.2.0/bits/stl_map.
+h:63,
+                 from C:
+/msys64/mingw64/include/
+c++/15.2.0/map:65,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qmetatype.h:2
+9,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qobject.h:18:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+In file included from C:
+/msys64/mingw64/include/
+qt6/QtCore/qdebug.h:33,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtCore/qvariant.h:13
+,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtGui/qaction.h:13,
+                 from C:
+/msys64/mingw64/include/
+qt6/QtWidgets/qwidget.h:
+13:
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+114: error: extended 
+character ظâ▓ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2938:
+9: error: extended 
+character ┬ب is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+17: error: extended 
+character ┬ئ is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2939:
+36: error: extended 
+character ╠╖ is not 
+valid at the start of 
+an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2941:
+110: error: extended 
+character ├ù is not 
+valid in an identifier
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2915:
+ error: unterminated 
+#ifdef
+ 2915 | #ifdef 
+__cpp_lib_apply // C++ 
+>= 17
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:36: 
+error: unterminated 
+#else
+   36 | #if __cplusplus 
+< 201103L
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:29: 
+error: unterminated 
+#ifndef
+   29 | #ifndef 
+_GLIBCXX_TUPLE
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+5: error: 'co' does not 
+name a type
+ 2929 |     coc┼░ـ└█"oY
+e3طkâئ3¤7┼V╡[ةغH║|9
+إ"Q╟║ïxًو▓<eUXnظï┴9sW╝
+╨إ┬╒î4%ءU╢2R$0<زO&▒
+<ء}ô╗ابev╜èP«=c>▒p╙[╨:╥
+╡مثْHh╩ْⁿ=£n╛qدAاk╕ش
+@أ~╖r
+      |     ^~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2929:
+93: error: 'ev' does 
+not name a type
+ 2929 |     coc┼░ـ└█"oY
+e3طkâئ3¤7┼V╡[ةغH║|9
+إ"Q╟║ïxًو▓<eUXnظï┴9sW╝
+╨إ┬╒î4%ءU╢2R$0<زO&▒
+<ء}ô╗ابev╜èP«=c>▒p╙[╨:╥
+╡مثْHh╩ْⁿ=£n╛qدAاk╕ش
+@أ~╖r
+      |                 
+                        
+                        
+                        
+    ^~
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+11: error: expected 
+declaration before '}' 
+token
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2931:
+13: error: expected 
+unqualified-id before 
+numeric constant
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+269: error: expected 
+declaration before '}' 
+token
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2934:
+270: error: 'xq' does 
+not name a type
+C:/msys64/mingw64/includ
+e/c++/15.2.0/tuple:2937:
+15: error: expected 
+unqualified-id before 
+'>' token
+mingw32-make[2]: *** [CM
+akeFiles\POSSystem.dir\b
+uild.make:94: CMakeFiles
+/POSSystem.dir/POSSystem
+_autogen/mocs_compilatio
+n.cpp.obj] Error 1
+mingw32-make[2]: Leaving directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+mingw32-make[1]: *** [CM
+akeFiles\Makefile2:89: C
+MakeFiles/POSSystem.dir/
+all] Error 2
+mingw32-make[1]: Leaving directory 'C:/Users/HP/.gemini/antigravity/scratch/pos-system/build'
+mingw32-make: *** 
+[Makefile:90: all] 
+Error 2

@@ -1,0 +1,37 @@
+[  0%] Built target POSSystem_autogen_timestamp_deps
+[  3%] Automatic MOC and UIC for target POSSystem
+[  3%] Built target POSSystem_autogen
+[  7%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj
+[ 11%] Building CXX object CMakeFiles/POSSystem.dir/src/main.cpp.obj
+[ 15%] Building CXX object CMakeFiles/POSSystem.dir/src/models/User.cpp.obj
+[ 19%] Building CXX object CMakeFiles/POSSystem.dir/src/views/LoginWindow.cpp.obj
+[ 23%] Building CXX object CMakeFiles/POSSystem.dir/src/views/MainWindow.cpp.obj
+[ 26%] Building CXX object CMakeFiles/POSSystem.dir/src/views/DashboardWidget.cpp.obj
+[ 30%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ProductsWidget.cpp.obj
+[ 34%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SalesWidget.cpp.obj
+[ 38%] Building CXX object CMakeFiles/POSSystem.dir/src/views/PurchasesWidget.cpp.obj
+In file included from C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.cpp:1:
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.h:13:3: error: 'QTableWidget' does not name a type
+   13 |   QTableWidget *m_recentInvoices;
+      |   ^~~~~~~~~~~~
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.h:14:3: error: 'QTableWidget' does not name a type
+   14 |   QTableWidget *m_lowStockTable;
+      |   ^~~~~~~~~~~~
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.cpp: In constructor 'DashboardWidget::DashboardWidget(QWidget*)':
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.cpp:52:3: error: 'm_recentInvoices' was not declared in this scope
+   52 |   m_recentInvoices = new QTableWidget;
+      |   ^~~~~~~~~~~~~~~~
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.cpp:75:3: error: 'm_lowStockTable' was not declared in this scope
+   75 |   m_lowStockTable = new QTableWidget;
+      |   ^~~~~~~~~~~~~~~
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.cpp: In member function 'void DashboardWidget::refresh()':
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.cpp:106:3: error: 'm_recentInvoices' was not declared in this scope
+  106 |   m_recentInvoices->setRowCount(0);
+      |   ^~~~~~~~~~~~~~~~
+C:\Users\HP\.gemini\antigravity\scratch\pos-system\src\views\DashboardWidget.cpp:133:3: error: 'm_lowStockTable' was not declared in this scope
+  133 |   m_lowStockTable->setRowCount(0);
+      |   ^~~~~~~~~~~~~~~
+mingw32-make[2]: *** [CMakeFiles\POSSystem.dir\build.make:229: CMakeFiles/POSSystem.dir/src/views/DashboardWidget.cpp.obj] Error 1
+mingw32-make[2]: *** Waiting for unfinished jobs....
+mingw32-make[1]: *** [CMakeFiles\Makefile2:89: CMakeFiles/POSSystem.dir/all] Error 2
+mingw32-make: *** [Makefile:90: all] Error 2

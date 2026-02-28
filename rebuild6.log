@@ -1,0 +1,32 @@
+-- Configuring done (0.8s)
+-- Generating done (0.5s)
+-- Build files have been written to: C:/Users/HP/.gemini/antigravity/scratch/pos-system/build
+[  0%] Built target POSSystem_autogen_timestamp_deps
+[  3%] Automatic MOC and UIC for target POSSystem
+[  3%] Built target POSSystem_autogen
+[  6%] Building CXX object CMakeFiles/POSSystem.dir/src/database/DatabaseManager.cpp.obj
+[  9%] Building CXX object CMakeFiles/POSSystem.dir/src/main.cpp.obj
+[ 12%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj
+[ 15%] Building CXX object CMakeFiles/POSSystem.dir/src/views/LoginWindow.cpp.obj
+[ 18%] Building CXX object CMakeFiles/POSSystem.dir/src/views/MainWindow.cpp.obj
+[ 21%] Building CXX object CMakeFiles/POSSystem.dir/src/views/DashboardWidget.cpp.obj
+[ 25%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ProductsWidget.cpp.obj
+[ 28%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SalesWidget.cpp.obj
+[ 31%] Building CXX object CMakeFiles/POSSystem.dir/src/views/PurchasesWidget.cpp.obj
+[ 34%] Building CXX object CMakeFiles/POSSystem.dir/src/views/StockWidget.cpp.obj
+[ 37%] Building CXX object CMakeFiles/POSSystem.dir/src/views/CustomersWidget.cpp.obj
+[ 40%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ReportsWidget.cpp.obj
+[ 43%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ExpensesWidget.cpp.obj
+[ 46%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SalesReturnsWidget.cpp.obj
+[ 50%] Building CXX object CMakeFiles/POSSystem.dir/src/views/PurchaseReturnsWidget.cpp.obj
+[ 53%] Building CXX object CMakeFiles/POSSystem.dir/src/views/TreasuryWidget.cpp.obj
+[ 59%] Building CXX object CMakeFiles/POSSystem.dir/src/views/AttendanceWidget.cpp.obj
+[ 59%] Building CXX object CMakeFiles/POSSystem.dir/src/views/EmployeesWidget.cpp.obj
+[ 62%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SettingsWidget.cpp.obj
+[ 65%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/SidebarWidget.cpp.obj
+[ 68%] Linking CXX executable POSSystem.exe
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file POSSystem.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+mingw32-make[2]: *** [CMakeFiles\POSSystem.dir\build.make:585: POSSystem.exe] Error 1
+mingw32-make[1]: *** [CMakeFiles\Makefile2:89: CMakeFiles/POSSystem.dir/all] Error 2
+mingw32-make: *** [Makefile:90: all] Error 2

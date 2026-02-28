@@ -1,0 +1,45 @@
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found WrapVulkanHeaders: C:/msys64/mingw64/include
+-- Configuring done (12.4s)
+-- Generating done (0.7s)
+-- Build files have been written to: C:/Users/HP/.gemini/antigravity/scratch/pos-system/build
+[  0%] Built target POSSystem_autogen_timestamp_deps
+[  3%] Automatic MOC and UIC for target POSSystem
+[  3%] Built target POSSystem_autogen
+[  7%] Automatic RCC for resources/resources.qrc
+[ 11%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj
+[ 14%] Building CXX object CMakeFiles/POSSystem.dir/src/main.cpp.obj
+[ 18%] Building CXX object CMakeFiles/POSSystem.dir/src/database/DatabaseManager.cpp.obj
+[ 22%] Building CXX object CMakeFiles/POSSystem.dir/src/models/Product.cpp.obj
+[ 25%] Building CXX object CMakeFiles/POSSystem.dir/src/models/Invoice.cpp.obj
+[ 29%] Building CXX object CMakeFiles/POSSystem.dir/src/models/Customer.cpp.obj
+[ 33%] Building CXX object CMakeFiles/POSSystem.dir/src/models/User.cpp.obj
+[ 37%] Building CXX object CMakeFiles/POSSystem.dir/src/views/LoginWindow.cpp.obj
+[ 40%] Building CXX object CMakeFiles/POSSystem.dir/src/views/MainWindow.cpp.obj
+[ 44%] Building CXX object CMakeFiles/POSSystem.dir/src/views/DashboardWidget.cpp.obj
+[ 48%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ProductsWidget.cpp.obj
+[ 51%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SalesWidget.cpp.obj
+[ 55%] Building CXX object CMakeFiles/POSSystem.dir/src/views/PurchasesWidget.cpp.obj
+[ 59%] Building CXX object CMakeFiles/POSSystem.dir/src/views/StockWidget.cpp.obj
+[ 62%] Building CXX object CMakeFiles/POSSystem.dir/src/views/CustomersWidget.cpp.obj
+[ 66%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ReportsWidget.cpp.obj
+[ 70%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ExpensesWidget.cpp.obj
+[ 74%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SettingsWidget.cpp.obj
+[ 77%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/SidebarWidget.cpp.obj
+[ 81%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/StatCard.cpp.obj
+[ 85%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/InvoiceTable.cpp.obj
+[ 88%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/SearchBar.cpp.obj
+[ 92%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/3YJK5W5UP7/qrc_resources.cpp.obj
+[ 96%] Linking CXX executable POSSystem.exe
+[100%] Built target POSSystem

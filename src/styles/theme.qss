@@ -1,0 +1,519 @@
+/* ============================================
+   نظام محاسبي - التنسيق العام
+   POS System - Modern Dark Theme
+   ============================================ */
+
+/* === Global === */
+QWidget {
+    font-family: "Segoe UI", "Cairo", "Tajawal", sans-serif;
+    font-size: 11px;
+    color: #E8EAED;
+    background-color: #1A1D23;
+}
+
+/* === Main Window === */
+QMainWindow {
+    background-color: #1A1D23;
+}
+
+/* === Sidebar === */
+#sidebar {
+    background-color: #12151A;
+    border-right: 1px solid #2D3139;
+    min-width: 190px;
+    max-width: 190px;
+}
+
+#sidebarLogo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6C63FF;
+    padding: 10px 10px;
+    border-bottom: 1px solid #2D3139;
+}
+
+#sidebarBtn {
+    text-align: right;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 1px 5px;
+    font-size: 11px;
+    color: #9CA3AF;
+    background-color: transparent;
+}
+
+#sidebarBtn:hover {
+    background-color: #1E2330;
+    color: #E8EAED;
+}
+
+#sidebarBtn:checked, #sidebarBtn[active="true"] {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #6C63FF, stop:1 #4F46E5);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#sidebarUserSection {
+    padding: 12px 15px;
+    border-top: 1px solid #2D3139;
+    color: #6B7280;
+    font-size: 12px;
+}
+
+/* === Header Bar === */
+#headerBar {
+    background-color: #1E2128;
+    border-bottom: 1px solid #2D3139;
+    padding: 4px 12px;
+    min-height: 32px;
+}
+
+#headerTitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #E8EAED;
+}
+
+#headerDate {
+    color: #6B7280;
+    font-size: 10px;
+}
+
+/* === Content Area === */
+#contentArea {
+    background-color: #1A1D23;
+    padding: 8px;
+}
+
+/* === Stat Cards === */
+#statCard {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1E2330, stop:1 #252A35);
+    border: 1px solid #2D3139;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 60px;
+}
+
+#statCardTitle {
+    font-size: 10px;
+    color: #6B7280;
+    font-weight: bold;
+}
+
+#statCardValue {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E8EAED;
+}
+
+#statCardSales { border-left: 4px solid #10B981; }
+#statCardPurchases { border-left: 4px solid #F59E0B; }
+#statCardProfit { border-left: 4px solid #6C63FF; }
+#statCardProducts { border-left: 4px solid #EF4444; }
+
+/* === Tables === */
+QTableWidget, QTableView {
+    background-color: #1E2128;
+    alternate-background-color: #232830;
+    border: 1px solid #2D3139;
+    border-radius: 6px;
+    gridline-color: #2D3139;
+    selection-background-color: #6C63FF;
+    selection-color: #FFFFFF;
+    font-size: 11px;
+}
+
+QTableWidget::item, QTableView::item {
+    padding: 4px 6px;
+    border-bottom: 1px solid #2D3139;
+}
+
+QHeaderView::section {
+    background-color: #252A35;
+    color: #9CA3AF;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px 6px;
+    border: none;
+    border-bottom: 2px solid #6C63FF;
+}
+
+/* === Buttons === */
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #6C63FF, stop:1 #5B54E8);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    min-height: 14px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #7B73FF, stop:1 #6C63FF);
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5B54E8, stop:1 #4F46E5);
+}
+
+QPushButton:disabled {
+    background-color: #374151;
+    color: #6B7280;
+}
+
+#btnSuccess {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #10B981, stop:1 #059669);
+}
+#btnSuccess:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #34D399, stop:1 #10B981);
+}
+
+#btnDanger {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EF4444, stop:1 #DC2626);
+}
+#btnDanger:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F87171, stop:1 #EF4444);
+}
+
+#btnWarning {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F59E0B, stop:1 #D97706);
+    color: #1A1D23;
+}
+#btnWarning:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FBBF24, stop:1 #F59E0B);
+}
+
+#btnOutline {
+    background: transparent;
+    border: 2px solid #6C63FF;
+    color: #6C63FF;
+}
+#btnOutline:hover {
+    background-color: #6C63FF;
+    color: #FFFFFF;
+}
+
+/* === Inputs === */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #252A35;
+    border: 1px solid #374151;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: #E8EAED;
+    font-size: 11px;
+    selection-background-color: #6C63FF;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border-color: #6C63FF;
+    background-color: #1E2330;
+}
+
+QLineEdit:disabled {
+    background-color: #1A1D23;
+    color: #6B7280;
+}
+
+/* === ComboBox === */
+QComboBox {
+    background-color: #252A35;
+    border: 1px solid #374151;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: #E8EAED;
+    font-size: 11px;
+    min-height: 14px;
+}
+
+QComboBox:focus {
+    border-color: #6C63FF;
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 10px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #252A35;
+    border: 1px solid #374151;
+    border-radius: 4px;
+    selection-background-color: #6C63FF;
+    color: #E8EAED;
+}
+
+/* === SpinBox === */
+QSpinBox, QDoubleSpinBox {
+    background-color: #252A35;
+    border: 1px solid #374151;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: #E8EAED;
+    font-size: 11px;
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus {
+    border-color: #6C63FF;
+}
+
+/* === DateEdit === */
+QDateEdit, QDateTimeEdit {
+    background-color: #252A35;
+    border: 1px solid #374151;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: #E8EAED;
+    font-size: 11px;
+}
+
+QDateEdit:focus, QDateTimeEdit:focus {
+    border-color: #6C63FF;
+}
+
+/* === Group Boxes === */
+QGroupBox {
+    background-color: #1E2128;
+    border: 1px solid #2D3139;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #9CA3AF;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top right;
+    padding: 4px 10px;
+    background-color: #6C63FF;
+    color: white;
+    border-radius: 4px;
+}
+
+/* === Labels === */
+QLabel {
+    color: #E8EAED;
+    border: none;
+    background: transparent;
+}
+
+#labelMuted {
+    color: #6B7280;
+    font-size: 12px;
+}
+
+/* === Scrollbar === */
+QScrollBar:vertical {
+    background: #1A1D23;
+    width: 8px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #374151;
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4B5563;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: #1A1D23;
+    height: 8px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #374151;
+    border-radius: 4px;
+    min-width: 30px;
+}
+
+/* === Tab Widget === */
+QTabWidget::pane {
+    border: 1px solid #2D3139;
+    border-radius: 8px;
+    background-color: #1E2128;
+    padding: 8px;
+}
+
+QTabBar::tab {
+    background-color: #252A35;
+    color: #9CA3AF;
+    padding: 10px 20px;
+    margin-right: 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 13px;
+}
+
+QTabBar::tab:selected {
+    background-color: #6C63FF;
+    color: white;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #1E2330;
+    color: #E8EAED;
+}
+
+/* === ToolTip === */
+QToolTip {
+    background-color: #252A35;
+    color: #E8EAED;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* === Message Box === */
+QMessageBox {
+    background-color: #1E2128;
+}
+
+/* === Progress Bar === */
+QProgressBar {
+    background-color: #252A35;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    height: 20px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #6C63FF, stop:1 #10B981);
+    border-radius: 6px;
+}
+
+/* === Login Window === */
+#loginWindow {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #0F1117, stop:1 #1A1D23);
+}
+
+#loginCard {
+    background-color: #1E2128;
+    border: 1px solid #2D3139;
+    border-radius: 16px;
+    padding: 40px;
+    min-width: 380px;
+}
+
+#loginTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6C63FF;
+}
+
+#loginSubtitle {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+#loginInput {
+    padding: 12px 16px;
+    font-size: 14px;
+    min-height: 24px;
+}
+
+#loginBtn {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 28px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #6C63FF, stop:1 #8B5CF6);
+    border-radius: 10px;
+}
+
+#loginBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #7B73FF, stop:1 #9B6CF6);
+}
+
+#loginError {
+    color: #EF4444;
+    font-size: 12px;
+    background: transparent;
+}
+
+/* === Search Bar === */
+#searchBar {
+    background-color: #252A35;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 11px;
+    min-height: 16px;
+}
+
+#searchBar:focus {
+    border-color: #6C63FF;
+    background-color: #1E2330;
+}
+
+/* === Status Bar === */
+QStatusBar {
+    background-color: #12151A;
+    color: #6B7280;
+    border-top: 1px solid #2D3139;
+    font-size: 11px;
+}
+
+/* === Tree Widget === */
+QTreeWidget, QTreeView {
+    background-color: #1E2128;
+    border: 1px solid #2D3139;
+    border-radius: 8px;
+    alternate-background-color: #232830;
+    selection-background-color: #6C63FF;
+}
+
+QTreeWidget::item, QTreeView::item {
+    padding: 6px;
+    border-bottom: 1px solid #2D3139;
+}
+
+/* === CheckBox === */
+QCheckBox {
+    spacing: 8px;
+    color: #E8EAED;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #374151;
+    background-color: #252A35;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+}
+
+/* === Invoice Summary === */
+#invoiceSummary {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #1E2330, stop:1 #252A35);
+    border: 1px solid #2D3139;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+#invoiceTotalLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #10B981;
+}

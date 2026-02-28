@@ -1,0 +1,9 @@
+[  0%] Built target POSSystem_autogen_timestamp_deps
+[  3%] Automatic MOC and UIC for target POSSystem
+[  3%] Built target POSSystem_autogen
+[  6%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj
+[  9%] Building CXX object CMakeFiles/POSSystem.dir/src/main.cpp.obj
+[ 12%] Building CXX object CMakeFiles/POSSystem.dir/src/views/MainWindow.cpp.obj
+[ 15%] Building CXX object CMakeFiles/POSSystem.dir/src/views/PurchasesWidget.cpp.obj
+[ 18%] Linking CXX executable POSSystem.exe
+[100%] Built target POSSystem

@@ -1,0 +1,33 @@
+-- Configuring done (1.3s)
+-- Generating done (0.6s)
+-- Build files have been written to: C:/Users/HP/.gemini/antigravity/scratch/pos-system/build
+[  0%] Built target POSSystem_autogen_timestamp_deps
+[  2%] Automatic MOC and UIC for target POSSystem
+[  2%] Built target POSSystem_autogen
+[  5%] Building CXX object CMakeFiles/POSSystem.dir/POSSystem_autogen/mocs_compilation.cpp.obj
+[  8%] Building CXX object CMakeFiles/POSSystem.dir/src/main.cpp.obj
+[ 10%] Building CXX object CMakeFiles/POSSystem.dir/src/database/DatabaseManager.cpp.obj
+[ 13%] Building CXX object CMakeFiles/POSSystem.dir/src/views/LoginWindow.cpp.obj
+[ 16%] Building CXX object CMakeFiles/POSSystem.dir/src/views/MainWindow.cpp.obj
+[ 18%] Building CXX object CMakeFiles/POSSystem.dir/src/views/DashboardWidget.cpp.obj
+[ 21%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ProductsWidget.cpp.obj
+[ 24%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SalesWidget.cpp.obj
+[ 27%] Building CXX object CMakeFiles/POSSystem.dir/src/views/PurchasesWidget.cpp.obj
+[ 29%] Building CXX object CMakeFiles/POSSystem.dir/src/views/StockWidget.cpp.obj
+[ 32%] Building CXX object CMakeFiles/POSSystem.dir/src/views/CustomersWidget.cpp.obj
+[ 35%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ReportsWidget.cpp.obj
+[ 37%] Building CXX object CMakeFiles/POSSystem.dir/src/views/ExpensesWidget.cpp.obj
+[ 40%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SalesReturnsWidget.cpp.obj
+[ 43%] Building CXX object CMakeFiles/POSSystem.dir/src/views/PurchaseReturnsWidget.cpp.obj
+[ 45%] Building CXX object CMakeFiles/POSSystem.dir/src/views/TreasuryWidget.cpp.obj
+[ 48%] Building CXX object CMakeFiles/POSSystem.dir/src/views/EmployeesWidget.cpp.obj
+[ 51%] Building CXX object CMakeFiles/POSSystem.dir/src/views/AttendanceWidget.cpp.obj
+[ 54%] Building CXX object CMakeFiles/POSSystem.dir/src/views/StockTransferWidget.cpp.obj
+[ 56%] Building CXX object CMakeFiles/POSSystem.dir/src/views/BookingWidget.cpp.obj
+[ 59%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SalaryWidget.cpp.obj
+[ 62%] Building CXX object CMakeFiles/POSSystem.dir/src/views/VacationWidget.cpp.obj
+[ 64%] Building CXX object CMakeFiles/POSSystem.dir/src/views/MaintenanceWidget.cpp.obj
+[ 67%] Building CXX object CMakeFiles/POSSystem.dir/src/views/SettingsWidget.cpp.obj
+[ 70%] Building CXX object CMakeFiles/POSSystem.dir/src/widgets/SidebarWidget.cpp.obj
+[ 72%] Linking CXX executable POSSystem.exe
+[100%] Built target POSSystem
