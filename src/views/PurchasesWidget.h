@@ -19,6 +19,7 @@ private slots:
   void onNewInvoice();
   void updateTotals();
   void onAddNewProduct();
+  void onUploadInvoice();
 
 private:
   QLineEdit *m_searchEdit;

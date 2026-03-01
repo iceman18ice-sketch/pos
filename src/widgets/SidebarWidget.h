@@ -2,9 +2,9 @@
 #include <QButtonGroup>
 #include <QLabel>
 #include <QPushButton>
+#include <QScrollArea>
 #include <QVBoxLayout>
 #include <QWidget>
-
 
 class SidebarWidget : public QWidget {
   Q_OBJECT
@@ -16,9 +16,10 @@ signals:
   void menuClicked(int index);
 
 private:
+  void addSectionLabel(QVBoxLayout *layout, const QString &text);
+  void addMenuButton(QVBoxLayout *layout, const QString &icon,
+                     const QString &text, int index);
   QButtonGroup *m_btnGroup;
   QLabel *m_userNameLabel;
   QLabel *m_userRoleLabel;
-  void addMenuButton(QVBoxLayout *layout, const QString &icon,
-                     const QString &text, int index);
 };

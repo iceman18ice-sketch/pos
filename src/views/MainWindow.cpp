@@ -1,5 +1,7 @@
 #include "MainWindow.h"
 #include "database/DatabaseManager.h"
+#include "views/DeviceSettingsWidget.h"
+#include "devices/CashDrawer.h"
 #include <QApplication>
 #include <QDateTime>
 #include <QHBoxLayout>
@@ -7,6 +9,14 @@
 #include <QMenuBar>
 #include <QMessageBox>
 #include <QStatusBar>
+#include <QComboBox>
+#include <QCoreApplication>
+#include <QDialog>
+#include <QDir>
+#include <QFileDialog>
+#include <QProcess>
+#include <QPushButton>
+#include <QShortcut>
 #include <QVBoxLayout>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
@@ -92,6 +102,29 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
   connect(m_sidebar, &SidebarWidget::menuClicked, this,
           &MainWindow::onMenuClicked);
+
+  // === Keyboard Shortcuts ===
+  auto addShortcut = [this](const QString &key, int idx) {
+    auto *sc = new QShortcut(QKeySequence(key), this);
+    connect(sc, &QShortcut::activated, [this, idx]() { onMenuClicked(idx); });
+  };
+  addShortcut("F1", 0);   // لوحة التحكم
+  addShortcut("F2", 1);   // المبيعات
+  addShortcut("F3", 2);   // المشتريات
+  addShortcut("F4", 3);   // المنتجات
+  addShortcut("F5", 7);   // التقارير
+  addShortcut("F9", 18);  // الإعدادات
+
+  auto *scRefresh = new QShortcut(QKeySequence("Ctrl+R"), this);
+  connect(scRefresh, &QShortcut::activated, [this]() {
+    if (m_dashboard) m_dashboard->refresh();
+  });
+
+  auto *scQuit = new QShortcut(QKeySequence("Ctrl+Q"), this);
+  connect(scQuit, &QShortcut::activated, [this]() {
+    if (QMessageBox::question(this, "خروج", "هل تريد الخروج؟") == QMessageBox::Yes)
+      qApp->exit(0);
+  });
 }
 
 void MainWindow::createMenuBar() {
@@ -101,43 +134,76 @@ void MainWindow::createMenuBar() {
   // ===== 1. ملف (File) =====
   auto *fileMenu = bar->addMenu("📁 ملف");
   fileMenu->addAction("⚙️ الإعدادات", [this]() { onMenuClicked(18); });
-  fileMenu->addAction("👤 المستخدمين", [this]() {
-    QMessageBox::information(
-        this, "المستخدمين",
-        "إدارة المستخدمين وصلاحياتهم.\n"
-        "يمكنك إضافة مستخدمين جدد وتعيين أدوارهم من الإعدادات.");
+  fileMenu->addAction("👤 المستخدمين", [this]() { onMenuClicked(18); });
+  fileMenu->addAction("🗄️ قاعدة البيانات", [this]() { onMenuClicked(18); });
+  fileMenu->addAction("🏢 الفروع", [this]() { onMenuClicked(18); });
+  fileMenu->addSeparator();
+
+  // Import/Export sub-menu
+  auto *dataMenu = fileMenu->addMenu("📂 استيراد / تصدير");
+  dataMenu->addAction("📥 استيراد أصناف من Excel", [this]() {
+    QString file = QFileDialog::getOpenFileName(this, "اختر ملف Excel",
+        QDir::homePath(), "Excel Files (*.xlsx *.xls)");
+    if (file.isEmpty()) return;
+
+    // Run Python import script
+    QString script = QCoreApplication::applicationDirPath() + "/import_excel.py";
+    if (!QFile::exists(script)) {
+      QMessageBox::critical(this, "خطأ",
+          "ملف import_excel.py غير موجود!\nيرجى التأكد من وجوده في مجلد البرنامج.");
+      return;
+    }
+
+    QProcess *proc = new QProcess(this);
+    proc->setProcessChannelMode(QProcess::MergedChannels);
+    connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
+        [this, proc](int code, QProcess::ExitStatus) {
+      QString output = QString::fromUtf8(proc->readAll());
+      if (code == 0) {
+        QMessageBox::information(this, "تم", "✅ تم استيراد الأصناف بنجاح!\n\n" + output);
+        onMenuClicked(3); // Go to products
+      } else {
+        QMessageBox::critical(this, "خطأ", "❌ فشل الاستيراد:\n\n" + output);
+      }
+      proc->deleteLater();
+    });
+    proc->start("python", {script, file});
+    QMessageBox::information(this, "جاري الاستيراد",
+        "⏳ جاري استيراد الأصناف من:\n" + file + "\n\nيرجى الانتظار...");
   });
-  fileMenu->addAction("🗄️ قاعدة البيانات", [this]() {
-    QMessageBox::information(this, "قاعدة البيانات",
-                             "📂 مسار قاعدة البيانات:\ndata/pos_database.db\n\n"
-                             "يمكنك أخذ نسخة احتياطية من المجلد data.");
+  dataMenu->addAction("📤 تصدير أصناف إلى Excel", [this]() {
+    QString file = QFileDialog::getSaveFileName(this, "حفظ ملف Excel",
+        QDir::homePath() + "/products_export.xlsx", "Excel Files (*.xlsx)");
+    if (file.isEmpty()) return;
+
+    QProcess *proc = new QProcess(this);
+    proc->setProcessChannelMode(QProcess::MergedChannels);
+    connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
+        [this, proc, file](int code, QProcess::ExitStatus) {
+      QString output = QString::fromUtf8(proc->readAll());
+      if (code == 0) {
+        QMessageBox::information(this, "تم", "✅ تم تصدير الأصناف إلى:\n" + file);
+      } else {
+        QMessageBox::critical(this, "خطأ", "❌ فشل التصدير:\n\n" + output);
+      }
+      proc->deleteLater();
+    });
+    QString script = QCoreApplication::applicationDirPath() + "/export_excel.py";
+    proc->start("python", {script, file});
   });
-  fileMenu->addAction("🏢 الفروع", [this]() {
-    QMessageBox::information(this, "الفروع",
-                             "إدارة فروع الشركة.\nالفرع الحالي: المقر الرئيسي");
-  });
-  fileMenu->addAction("🔧 الأدوات", [this]() {
-    QMessageBox::information(this, "الأدوات",
-                             "🔧 أدوات النظام:\n\n"
-                             "• حاسبة مدمجة\n"
-                             "• تصدير البيانات\n"
-                             "• استيراد البيانات");
-  });
+
   fileMenu->addSeparator();
 
   // Hardware devices sub-menu
   auto *devicesMenu = fileMenu->addMenu("🖨️ الأجهزة");
   devicesMenu->addAction("👆 جهاز البصمة", [this]() {
-    QMessageBox::information(this, "جهاز البصمة",
-                             "👆 إعدادات جهاز البصمة\n"
-                             "══════════════════════\n\n"
-                             "الحالة: ❌ غير متصل\n\n"
-                             "الأجهزة المدعومة:\n"
-                             "• ZKTeco K40/K50\n"
-                             "• ZKTeco iClock\n"
-                             "• FingerTec R2/R3\n\n"
-                             "💡 تأكد من توصيل الجهاز عبر USB أو الشبكة\n"
-                             "ثم اضغط 'بحث عن الأجهزة'");
+    QDialog dlg(this);
+    dlg.setWindowTitle("إعدادات الأجهزة");
+    dlg.setMinimumSize(900, 600);
+    dlg.setLayoutDirection(Qt::RightToLeft);
+    auto *lay = new QVBoxLayout(&dlg);
+    lay->addWidget(new DeviceSettingsWidget(&dlg));
+    dlg.exec();
   });
   devicesMenu->addAction("🖨️ طابعة POS", [this]() {
     QMessageBox::information(this, "طابعة POS",
@@ -155,15 +221,32 @@ void MainWindow::createMenuBar() {
                              "💡 تأكد من تعريف الطابعة على الويندوز");
   });
   devicesMenu->addAction("🗃️ درج الكاش", [this]() {
-    QMessageBox::information(this, "درج الكاش",
-                             "🗃️ إعدادات درج الكاش\n"
-                             "══════════════════════\n\n"
-                             "الحالة: ❌ غير متصل\n\n"
-                             "طريقة الفتح:\n"
-                             "• تلقائي عند حفظ الفاتورة\n"
-                             "• يدوي بالضغط على زر\n\n"
-                             "الاتصال: عبر طابعة POS (RJ11)\n"
-                             "💡 معظم أدراج الكاش تتصل عبر الطابعة");
+    QDialog dlg(this);
+    dlg.setWindowTitle("درج الكاش");
+    dlg.setMinimumSize(500, 250);
+    dlg.setLayoutDirection(Qt::RightToLeft);
+    auto *lay = new QVBoxLayout(&dlg);
+    auto *label = new QLabel("🖨️ اختر الطابعة المتصل بها الدرج:");
+    label->setStyleSheet("background: transparent;");
+    lay->addWidget(label);
+    auto *combo = new QComboBox;
+    for (const auto &p : CashDrawer::availablePrinters()) combo->addItem(p);
+    lay->addWidget(combo);
+    auto *testBtn = new QPushButton("🗃️ اختبار فتح الدرج");
+    testBtn->setObjectName("btnPrimary");
+    testBtn->setCursor(Qt::PointingHandCursor);
+    auto *resultLabel = new QLabel;
+    resultLabel->setStyleSheet("padding: 8px; background: transparent;");
+    lay->addWidget(testBtn);
+    lay->addWidget(resultLabel);
+    lay->addStretch();
+    connect(testBtn, &QPushButton::clicked, [combo, resultLabel]() {
+      CashDrawer drawer;
+      bool ok = drawer.openDrawer(combo->currentText());
+      if (ok) resultLabel->setText("✅ تم فتح الدرج!");
+      else resultLabel->setText("❌ فشل: " + drawer.lastError());
+    });
+    dlg.exec();
   });
   devicesMenu->addAction("📷 قارئ الباركود", [this]() {
     QMessageBox::information(this, "قارئ الباركود",

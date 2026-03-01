@@ -16,7 +16,7 @@ if(MSVC)
     add_compile_options(/utf-8)
 endif()
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets Sql Charts Svg PrintSupport)
+find_package(Qt6 REQUIRED COMPONENTS Widgets Sql Charts Svg PrintSupport Network)
 
 set(SOURCES
     src/main.cpp
@@ -52,6 +52,9 @@ set(SOURCES
     src/widgets/SearchBar.cpp
     src/utils/ZatcaQR.cpp
     src/utils/qrcodegen.cpp
+    src/devices/ZKDevice.cpp
+    src/devices/CashDrawer.cpp
+    src/views/DeviceSettingsWidget.cpp
 )
 
 set(HEADERS
@@ -87,6 +90,9 @@ set(HEADERS
     src/widgets/SearchBar.h
     src/utils/ZatcaQR.h
     src/utils/qrcodegen.hpp
+    src/devices/ZKDevice.h
+    src/devices/CashDrawer.h
+    src/views/DeviceSettingsWidget.h
 )
 
 set(RESOURCES
@@ -105,6 +111,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Charts
     Qt6::Svg
     Qt6::PrintSupport
+    Qt6::Network
+    winspool
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE

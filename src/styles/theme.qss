@@ -1,12 +1,12 @@
 /* ============================================
    نظام محاسبي - التنسيق العام
-   POS System - Modern Dark Theme
+   POS System v3.0 - Premium Dark Theme
    ============================================ */
 
 /* === Global === */
 QWidget {
-    font-family: "Segoe UI", "Cairo", "Tajawal", sans-serif;
-    font-size: 11px;
+    font-family: "Cairo", "Tajawal", "Segoe UI", sans-serif;
+    font-size: 13px;
     color: #E8EAED;
     background-color: #1A1D23;
 }
@@ -20,25 +20,36 @@ QMainWindow {
 #sidebar {
     background-color: #12151A;
     border-right: 1px solid #2D3139;
-    min-width: 190px;
-    max-width: 190px;
+    min-width: 210px;
+    max-width: 210px;
 }
 
 #sidebarLogo {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #6C63FF;
-    padding: 10px 10px;
+    padding: 14px 12px;
     border-bottom: 1px solid #2D3139;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #181B22, stop:1 #12151A);
+}
+
+#sidebarSectionLabel {
+    font-size: 10px;
+    font-weight: bold;
+    color: #4B5563;
+    padding: 10px 14px 2px 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: transparent;
 }
 
 #sidebarBtn {
     text-align: right;
-    padding: 5px 10px;
+    padding: 8px 14px;
     border: none;
-    border-radius: 5px;
-    margin: 1px 5px;
-    font-size: 11px;
+    border-radius: 6px;
+    margin: 1px 6px;
+    font-size: 12px;
     color: #9CA3AF;
     background-color: transparent;
 }
@@ -59,25 +70,26 @@ QMainWindow {
     border-top: 1px solid #2D3139;
     color: #6B7280;
     font-size: 12px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #12151A, stop:1 #0E1016);
 }
 
 /* === Header Bar === */
 #headerBar {
-    background-color: #1E2128;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #1E2128, stop:1 #232830);
     border-bottom: 1px solid #2D3139;
-    padding: 4px 12px;
-    min-height: 32px;
+    padding: 6px 16px;
+    min-height: 38px;
 }
 
 #headerTitle {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     color: #E8EAED;
 }
 
 #headerDate {
     color: #6B7280;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 /* === Content Area === */
@@ -90,19 +102,24 @@ QMainWindow {
 #statCard {
     background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1E2330, stop:1 #252A35);
     border: 1px solid #2D3139;
-    border-radius: 8px;
-    padding: 10px;
-    min-height: 60px;
+    border-radius: 10px;
+    padding: 14px;
+    min-height: 70px;
+}
+
+#statCard:hover {
+    border-color: #6C63FF;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #222740, stop:1 #2A2F40);
 }
 
 #statCardTitle {
-    font-size: 10px;
+    font-size: 11px;
     color: #6B7280;
     font-weight: bold;
 }
 
 #statCardValue {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: #E8EAED;
 }
@@ -111,21 +128,23 @@ QMainWindow {
 #statCardPurchases { border-left: 4px solid #F59E0B; }
 #statCardProfit { border-left: 4px solid #6C63FF; }
 #statCardProducts { border-left: 4px solid #EF4444; }
+#statCardExpenses { border-left: 4px solid #F472B6; }
+#statCardAlerts { border-left: 4px solid #FB923C; }
 
 /* === Tables === */
 QTableWidget, QTableView {
     background-color: #1E2128;
     alternate-background-color: #232830;
     border: 1px solid #2D3139;
-    border-radius: 6px;
+    border-radius: 8px;
     gridline-color: #2D3139;
     selection-background-color: #6C63FF;
     selection-color: #FFFFFF;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 QTableWidget::item, QTableView::item {
-    padding: 4px 6px;
+    padding: 6px 8px;
     border-bottom: 1px solid #2D3139;
 }
 
@@ -133,8 +152,8 @@ QHeaderView::section {
     background-color: #252A35;
     color: #9CA3AF;
     font-weight: bold;
-    font-size: 10px;
-    padding: 5px 6px;
+    font-size: 11px;
+    padding: 7px 8px;
     border: none;
     border-bottom: 2px solid #6C63FF;
 }
@@ -145,10 +164,10 @@ QPushButton {
     color: #FFFFFF;
     border: none;
     border-radius: 6px;
-    padding: 6px 12px;
-    font-size: 11px;
+    padding: 8px 16px;
+    font-size: 12px;
     font-weight: bold;
-    min-height: 14px;
+    min-height: 16px;
 }
 
 QPushButton:hover {
@@ -196,14 +215,21 @@ QPushButton:disabled {
     color: #FFFFFF;
 }
 
+#btnPrimary {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #3B82F6, stop:1 #2563EB);
+}
+#btnPrimary:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #60A5FA, stop:1 #3B82F6);
+}
+
 /* === Inputs === */
 QLineEdit, QTextEdit, QPlainTextEdit {
     background-color: #252A35;
     border: 1px solid #374151;
-    border-radius: 5px;
-    padding: 5px 8px;
+    border-radius: 6px;
+    padding: 6px 10px;
     color: #E8EAED;
-    font-size: 11px;
+    font-size: 12px;
     selection-background-color: #6C63FF;
 }
 
@@ -221,11 +247,11 @@ QLineEdit:disabled {
 QComboBox {
     background-color: #252A35;
     border: 1px solid #374151;
-    border-radius: 5px;
-    padding: 4px 8px;
+    border-radius: 6px;
+    padding: 6px 10px;
     color: #E8EAED;
-    font-size: 11px;
-    min-height: 14px;
+    font-size: 12px;
+    min-height: 16px;
 }
 
 QComboBox:focus {
@@ -243,16 +269,17 @@ QComboBox QAbstractItemView {
     border-radius: 4px;
     selection-background-color: #6C63FF;
     color: #E8EAED;
+    padding: 4px;
 }
 
 /* === SpinBox === */
 QSpinBox, QDoubleSpinBox {
     background-color: #252A35;
     border: 1px solid #374151;
-    border-radius: 5px;
-    padding: 4px 8px;
+    border-radius: 6px;
+    padding: 6px 10px;
     color: #E8EAED;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 QSpinBox:focus, QDoubleSpinBox:focus {
@@ -260,17 +287,29 @@ QSpinBox:focus, QDoubleSpinBox:focus {
 }
 
 /* === DateEdit === */
-QDateEdit, QDateTimeEdit {
+QDateEdit, QDateTimeEdit, QTimeEdit {
     background-color: #252A35;
     border: 1px solid #374151;
-    border-radius: 5px;
-    padding: 4px 8px;
+    border-radius: 6px;
+    padding: 6px 10px;
     color: #E8EAED;
-    font-size: 11px;
+    font-size: 12px;
 }
 
-QDateEdit:focus, QDateTimeEdit:focus {
+QDateEdit:focus, QDateTimeEdit:focus, QTimeEdit:focus {
     border-color: #6C63FF;
+}
+
+/* === Calendar Popup === */
+QCalendarWidget {
+    background-color: #1E2128;
+}
+
+QCalendarWidget QAbstractItemView {
+    background-color: #1E2128;
+    selection-background-color: #6C63FF;
+    selection-color: white;
+    font-size: 12px;
 }
 
 /* === Group Boxes === */
@@ -278,19 +317,21 @@ QGroupBox {
     background-color: #1E2128;
     border: 1px solid #2D3139;
     border-radius: 10px;
-    margin-top: 12px;
-    padding-top: 20px;
+    margin-top: 14px;
+    padding-top: 22px;
     font-weight: bold;
+    font-size: 13px;
     color: #9CA3AF;
 }
 
 QGroupBox::title {
     subcontrol-origin: margin;
     subcontrol-position: top right;
-    padding: 4px 10px;
+    padding: 5px 12px;
     background-color: #6C63FF;
     color: white;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 12px;
 }
 
 /* === Labels === */
@@ -345,13 +386,13 @@ QTabWidget::pane {
     border: 1px solid #2D3139;
     border-radius: 8px;
     background-color: #1E2128;
-    padding: 8px;
+    padding: 10px;
 }
 
 QTabBar::tab {
     background-color: #252A35;
     color: #9CA3AF;
-    padding: 10px 20px;
+    padding: 10px 22px;
     margin-right: 2px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -375,13 +416,23 @@ QToolTip {
     color: #E8EAED;
     border: 1px solid #374151;
     border-radius: 6px;
-    padding: 6px 10px;
+    padding: 8px 12px;
     font-size: 12px;
 }
 
 /* === Message Box === */
 QMessageBox {
     background-color: #1E2128;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    padding: 8px 20px;
+}
+
+/* === Dialog === */
+QDialog {
+    background-color: #1A1D23;
 }
 
 /* === Progress Bar === */
@@ -391,7 +442,8 @@ QProgressBar {
     border-radius: 6px;
     text-align: center;
     color: white;
-    height: 20px;
+    height: 22px;
+    font-size: 11px;
 }
 
 QProgressBar::chunk {
@@ -401,19 +453,19 @@ QProgressBar::chunk {
 
 /* === Login Window === */
 #loginWindow {
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #0F1117, stop:1 #1A1D23);
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #0F1117, stop:0.5 #141822, stop:1 #1A1D23);
 }
 
 #loginCard {
     background-color: #1E2128;
     border: 1px solid #2D3139;
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 40px;
-    min-width: 380px;
+    min-width: 400px;
 }
 
 #loginTitle {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     color: #6C63FF;
 }
@@ -424,9 +476,10 @@ QProgressBar::chunk {
 }
 
 #loginInput {
-    padding: 12px 16px;
+    padding: 14px 18px;
     font-size: 14px;
     min-height: 24px;
+    border-radius: 10px;
 }
 
 #loginBtn {
@@ -435,7 +488,7 @@ QProgressBar::chunk {
     font-weight: bold;
     min-height: 28px;
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #6C63FF, stop:1 #8B5CF6);
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 #loginBtn:hover {
@@ -452,10 +505,10 @@ QProgressBar::chunk {
 #searchBar {
     background-color: #252A35;
     border: 1px solid #374151;
-    border-radius: 6px;
-    padding: 6px 10px;
-    font-size: 11px;
-    min-height: 16px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 12px;
+    min-height: 18px;
 }
 
 #searchBar:focus {
@@ -469,6 +522,7 @@ QStatusBar {
     color: #6B7280;
     border-top: 1px solid #2D3139;
     font-size: 11px;
+    padding: 2px 8px;
 }
 
 /* === Tree Widget === */
@@ -489,6 +543,7 @@ QTreeWidget::item, QTreeView::item {
 QCheckBox {
     spacing: 8px;
     color: #E8EAED;
+    font-size: 12px;
 }
 
 QCheckBox::indicator {
@@ -513,7 +568,78 @@ QCheckBox::indicator:checked {
 }
 
 #invoiceTotalLabel {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     color: #10B981;
+}
+
+/* === Chart Container === */
+#chartContainer {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1E2330, stop:1 #252A35);
+    border: 1px solid #2D3139;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* === Menu Bar === */
+QMenuBar {
+    background-color: #12151A;
+    color: #9CA3AF;
+    border-bottom: 1px solid #2D3139;
+    font-size: 12px;
+    padding: 2px;
+}
+
+QMenuBar::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: #252A35;
+    color: #E8EAED;
+}
+
+QMenu {
+    background-color: #1E2128;
+    border: 1px solid #2D3139;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+QMenu::item {
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #6C63FF;
+    color: white;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #2D3139;
+    margin: 4px 8px;
+}
+
+/* === Splitter === */
+QSplitter::handle {
+    background: #2D3139;
+}
+
+QSplitter::handle:horizontal {
+    width: 2px;
+}
+
+QSplitter::handle:vertical {
+    height: 2px;
+}
+
+/* === Form Row Labels === */
+QFormLayout QLabel {
+    font-size: 13px;
+    color: #9CA3AF;
+    font-weight: bold;
 }

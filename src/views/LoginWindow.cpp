@@ -90,7 +90,7 @@ LoginWindow::LoginWindow(QWidget *parent) : QWidget(parent) {
   cardLayout->addWidget(m_loginBtn);
 
   // Version
-  auto *versionLabel = new QLabel("الإصدار 1.0.0");
+  auto *versionLabel = new QLabel("الإصدار 3.0.0");
   versionLabel->setObjectName("labelMuted");
   versionLabel->setAlignment(Qt::AlignCenter);
   cardLayout->addWidget(versionLabel);

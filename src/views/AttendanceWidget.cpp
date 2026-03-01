@@ -1,4 +1,5 @@
 #include "AttendanceWidget.h"
+#include "views/DeviceSettingsWidget.h"
 #include "database/DatabaseManager.h"
 #include <QComboBox>
 #include <QDateEdit>
@@ -54,6 +55,16 @@ AttendanceWidget::AttendanceWidget(QWidget *parent) : QWidget(parent) {
   addBtn->setObjectName("btnSuccess");
   addBtn->setCursor(Qt::PointingHandCursor);
   topBar->addWidget(addBtn);
+
+  auto *fpBtn = new QPushButton("📡  سحب من جهاز البصمة");
+  fpBtn->setObjectName("btnPrimary");
+  fpBtn->setCursor(Qt::PointingHandCursor);
+  fpBtn->setStyleSheet(
+      "QPushButton { background: #89B4FA; color: #1E1E2E; font-weight: bold; "
+      "border-radius: 6px; padding: 8px 16px; }"
+      "QPushButton:hover { background: #74C7EC; }");
+  topBar->addWidget(fpBtn);
+
   layout->addLayout(topBar);
 
   m_table = new QTableWidget;
@@ -70,6 +81,16 @@ AttendanceWidget::AttendanceWidget(QWidget *parent) : QWidget(parent) {
 
   connect(filterBtn, &QPushButton::clicked, this, &AttendanceWidget::loadData);
   connect(addBtn, &QPushButton::clicked, this, &AttendanceWidget::onAdd);
+  connect(fpBtn, &QPushButton::clicked, this, [this]() {
+    QDialog dlg(this);
+    dlg.setWindowTitle("سحب بيانات البصمة");
+    dlg.setMinimumSize(900, 600);
+    dlg.setLayoutDirection(Qt::RightToLeft);
+    auto *lay = new QVBoxLayout(&dlg);
+    lay->addWidget(new DeviceSettingsWidget(&dlg));
+    dlg.exec();
+    loadData(); // refresh after sync
+  });
   loadData();
 }
 

@@ -1,7 +1,10 @@
 #include "PurchasesWidget.h"
 #include "database/DatabaseManager.h"
+#include <QCoreApplication>
 #include <QDialog>
+#include <QDir>
 #include <QDoubleSpinBox>
+#include <QFileDialog>
 #include <QFormLayout>
 #include <QGridLayout>
 #include <QGroupBox>
@@ -9,6 +12,8 @@
 #include <QHeaderView>
 #include <QKeyEvent>
 #include <QMessageBox>
+#include <QProcess>
+#include <QProgressDialog>
 #include <QPushButton>
 #include <QShortcut>
 #include <QVBoxLayout>
@@ -89,6 +94,13 @@ PurchasesWidget::PurchasesWidget(QWidget *parent) : QWidget(parent) {
   m_searchEdit->setMinimumHeight(40);
   m_searchEdit->setStyleSheet("font-size: 14px; padding: 8px 12px;");
   searchRow->addWidget(m_searchEdit, 1);
+
+  auto *uploadBtn = new QPushButton("📄 رفع فاتورة");
+  uploadBtn->setObjectName("btnPrimary");
+  uploadBtn->setCursor(Qt::PointingHandCursor);
+  uploadBtn->setMinimumHeight(40);
+  uploadBtn->setToolTip("رفع فاتورة من ملف Excel أو CSV لإدخال الأصناف تلقائياً");
+  searchRow->addWidget(uploadBtn);
 
   auto *addProdBtn = new QPushButton("➕ إضافة صنف جديد");
   addProdBtn->setObjectName("btnSuccess");
@@ -216,6 +228,8 @@ PurchasesWidget::PurchasesWidget(QWidget *parent) : QWidget(parent) {
           &PurchasesWidget::onSaveInvoice);
   connect(savePrintBtn, &QPushButton::clicked, [this]() { onSaveInvoice(); });
   connect(newBtn, &QPushButton::clicked, this, &PurchasesWidget::onNewInvoice);
+  connect(uploadBtn, &QPushButton::clicked, this,
+          &PurchasesWidget::onUploadInvoice);
   connect(addProdBtn, &QPushButton::clicked, this,
           &PurchasesWidget::onAddNewProduct);
   connect(m_discountEdit, &QLineEdit::textChanged,
@@ -402,4 +416,118 @@ void PurchasesWidget::onAddNewProduct() {
     }
   });
   dlg.exec();
+}
+
+void PurchasesWidget::onUploadInvoice() {
+  QString file = QFileDialog::getOpenFileName(
+      this, "اختر ملف فاتورة المشتريات", QDir::homePath(),
+      "Excel & CSV (*.xlsx *.xls *.csv);;All Files (*)");
+  if (file.isEmpty())
+    return;
+
+  // Run Python parser
+  QString script =
+      QCoreApplication::applicationDirPath() + "/parse_invoice.py";
+  if (!QFile::exists(script)) {
+    QMessageBox::critical(this, "خطأ",
+                          "ملف parse_invoice.py غير موجود في مجلد البرنامج!");
+    return;
+  }
+
+  QProcess proc;
+  proc.setProcessChannelMode(QProcess::MergedChannels);
+  proc.start("python", {"-u", script, file});
+
+  QProgressDialog progress("⏳ جاري قراءة الفاتورة...", "إلغاء", 0, 0, this);
+  progress.setWindowModality(Qt::WindowModal);
+  progress.setLayoutDirection(Qt::RightToLeft);
+  progress.show();
+
+  if (!proc.waitForFinished(60000)) {
+    progress.close();
+    QMessageBox::critical(this, "خطأ", "انتهت مهلة قراءة الملف!");
+    return;
+  }
+  progress.close();
+
+  QString output = QString::fromUtf8(proc.readAll());
+  QStringList lines = output.split('\n', Qt::SkipEmptyParts);
+
+  if (lines.isEmpty() || proc.exitCode() != 0) {
+    QMessageBox::critical(this, "خطأ",
+                          "فشل قراءة الملف!\n\n" + output);
+    return;
+  }
+
+  auto &db = DatabaseManager::instance();
+  int added = 0, notFound = 0;
+  QStringList notFoundList;
+
+  for (const QString &line : lines) {
+    if (line.startsWith("ITEMS:") || line.startsWith("END") ||
+        line.startsWith("ERROR"))
+      continue;
+
+    QStringList parts = line.trimmed().split('|');
+    if (parts.size() < 4)
+      continue;
+
+    QString barcode = parts[0].trimmed();
+    QString name = parts[1].trimmed();
+    double qty = parts[2].trimmed().toDouble();
+    double price = parts[3].trimmed().toDouble();
+    if (qty <= 0)
+      qty = 1;
+
+    // Try to find product by barcode first, then by name
+    bool found = false;
+    QSqlQuery q;
+
+    if (!barcode.isEmpty()) {
+      q = db.getProductByBarcode(barcode);
+      if (q.next()) {
+        int pid = q.value("id").toInt();
+        QString pname = q.value("name").toString();
+        double buyPrice = price > 0 ? price : q.value("buy_price").toDouble();
+        double tax = q.value("tax_rate").toDouble();
+        m_table->addItem(pid, pname, qty, buyPrice, tax);
+        added++;
+        found = true;
+      }
+    }
+
+    if (!found && !name.isEmpty()) {
+      q = db.getProducts(name);
+      if (q.next()) {
+        int pid = q.value("id").toInt();
+        QString pname = q.value("name").toString();
+        double buyPrice = price > 0 ? price : q.value("buy_price").toDouble();
+        double tax = q.value("tax_rate").toDouble();
+        m_table->addItem(pid, pname, qty, buyPrice, tax);
+        added++;
+        found = true;
+      }
+    }
+
+    if (!found) {
+      notFound++;
+      QString display = name.isEmpty() ? barcode : name;
+      if (notFoundList.size() < 20)
+        notFoundList << display;
+    }
+  }
+
+  updateTotals();
+
+  // Show result
+  QString msg = QString("✅ تم إضافة %1 صنف من الفاتورة.").arg(added);
+  if (notFound > 0) {
+    msg += QString("\n\n⚠️ %1 صنف لم يتم العثور عليه في قاعدة البيانات:\n")
+               .arg(notFound);
+    msg += notFoundList.join("\n");
+    if (notFound > 20)
+      msg += "\n...";
+  }
+
+  QMessageBox::information(this, "نتيجة الرفع", msg);
 }

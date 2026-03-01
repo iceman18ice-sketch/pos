@@ -1,5 +1,6 @@
 ﻿#include "SalesWidget.h"
 #include "database/DatabaseManager.h"
+#include "devices/CashDrawer.h"
 #include "utils/ZatcaQR.h"
 #include <QDateTime>
 #include <QDesktopServices>
@@ -389,6 +390,14 @@ void SalesWidget::onSaveInvoice() {
     QMessageBox::information(this, "تم",
                              "تم حفظ الفاتورة بنجاح!\nرقم الفاتورة: " +
                                  QString::number(m_invoiceNo));
+
+    // Auto-open cash drawer if enabled
+    QString drawerPrinter = db.getSetting("cash_drawer_printer", "");
+    if (!drawerPrinter.isEmpty()) {
+      CashDrawer drawer;
+      drawer.openDrawer(drawerPrinter);
+    }
+
     onNewInvoice();
   } else {
     QMessageBox::critical(this, "خطأ", "حدث خطأ أثناء حفظ الفاتورة!");
