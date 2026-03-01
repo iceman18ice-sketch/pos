@@ -5,6 +5,7 @@
 #include <QDialog>
 #include <QDir>
 #include <QDoubleSpinBox>
+#include <QFileDialog>
 #include <QFileInfo>
 #include <QFormLayout>
 #include <QHBoxLayout>
@@ -13,6 +14,8 @@
 #include <QLineEdit>
 #include <QMessageBox>
 #include <QPixmap>
+#include <QProcess>
+#include <QProgressDialog>
 #include <QPushButton>
 #include <QVBoxLayout>
 
@@ -43,6 +46,14 @@ ProductsWidget::ProductsWidget(QWidget *parent) : QWidget(parent) {
 
   topBar->addStretch();
 
+  auto *importBtn = new QPushButton("📥 استيراد من Excel");
+  importBtn->setCursor(Qt::PointingHandCursor);
+  importBtn->setStyleSheet(
+      "font-size: 13px; font-weight: bold; "
+      "background: #6366F1; color: white; "
+      "border-radius: 8px; border: none; padding: 8px 14px;");
+  topBar->addWidget(importBtn);
+
   auto *addBtn = new QPushButton("➕  إضافة منتج");
   addBtn->setObjectName("btnSuccess");
   addBtn->setCursor(Qt::PointingHandCursor);
@@ -56,6 +67,14 @@ ProductsWidget::ProductsWidget(QWidget *parent) : QWidget(parent) {
   delBtn->setObjectName("btnDanger");
   delBtn->setCursor(Qt::PointingHandCursor);
   topBar->addWidget(delBtn);
+
+  auto *delAllBtn = new QPushButton("⚠️ حذف الكل");
+  delAllBtn->setCursor(Qt::PointingHandCursor);
+  delAllBtn->setStyleSheet(
+      "font-size: 13px; font-weight: bold; "
+      "background: #DC2626; color: white; "
+      "border-radius: 8px; border: none; padding: 8px 14px;");
+  topBar->addWidget(delAllBtn);
 
   layout->addLayout(topBar);
 
@@ -83,6 +102,90 @@ ProductsWidget::ProductsWidget(QWidget *parent) : QWidget(parent) {
   connect(editBtn, &QPushButton::clicked, this, &ProductsWidget::onEdit);
   connect(delBtn, &QPushButton::clicked, this, &ProductsWidget::onDelete);
   connect(m_table, &QTableWidget::doubleClicked, this, &ProductsWidget::onEdit);
+
+  // Delete All Products
+  connect(delAllBtn, &QPushButton::clicked, [this]() {
+    if (QMessageBox::warning(this, "⚠️ تحذير",
+            "هل أنت متأكد أنك تريد حذف جميع المنتجات؟\n\n"
+            "هذا الإجراء لا يمكن التراجع عنه!",
+            QMessageBox::Yes | QMessageBox::No,
+            QMessageBox::No) != QMessageBox::Yes) return;
+    if (QMessageBox::critical(this, "⚠️ تأكيد نهائي",
+            "هل أنت متأكد 100%؟\n\nسيتم حذف جميع المنتجات نهائياً!",
+            QMessageBox::Yes | QMessageBox::No,
+            QMessageBox::No) != QMessageBox::Yes) return;
+
+    DatabaseManager::instance().deleteAllProducts();
+    loadProducts();
+    QMessageBox::information(this, "تم", "✅ تم حذف جميع المنتجات!");
+  });
+
+  // Import from Excel
+  connect(importBtn, &QPushButton::clicked, [this]() {
+    QString file = QFileDialog::getOpenFileName(this,
+        "اختر ملف Excel", "",
+        "Excel Files (*.xlsx *.xls);;CSV Files (*.csv)");
+    if (file.isEmpty()) return;
+
+    QString appDir = QCoreApplication::applicationDirPath();
+    QString script = appDir + "/import_products.py";
+    QString dbPath = appDir + "/data/pos_database.db";
+    QString imagesDir = appDir + "/data/images";
+
+    if (!QFile::exists(script)) {
+      QMessageBox::critical(this, "خطأ",
+          "ملف import_products.py غير موجود!");
+      return;
+    }
+
+    QProcess *proc = new QProcess(this);
+    proc->setProcessChannelMode(QProcess::MergedChannels);
+
+    QProgressDialog *progress = new QProgressDialog(
+        "⏳ جاري استيراد المنتجات...", "إلغاء", 0, 2, this);
+    progress->setWindowModality(Qt::WindowModal);
+    progress->setLayoutDirection(Qt::RightToLeft);
+    progress->setMinimumWidth(400);
+    progress->show();
+
+    connect(proc, &QProcess::readyReadStandardOutput, [proc, progress]() {
+      QString out = QString::fromUtf8(proc->readAll());
+      for (const QString &line : out.split('\n')) {
+        if (line.startsWith("STEP:")) {
+          QStringList parts = line.split(':');
+          if (parts.size() >= 3) {
+            progress->setValue(parts[1].toInt());
+            progress->setLabelText("⏳ " + parts[2]);
+          }
+        }
+      }
+    });
+
+    connect(proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
+        [=](int code, QProcess::ExitStatus) {
+      progress->close();
+      progress->deleteLater();
+
+      QString output = QString::fromUtf8(proc->readAll());
+      if (code == 0 && output.contains("DONE:")) {
+        // Extract result message
+        for (const QString &line : output.split('\n')) {
+          if (line.startsWith("DONE:")) {
+            QMessageBox::information(this, "تم الاستيراد! ✅",
+                "🎉 " + line.mid(5));
+            break;
+          }
+        }
+      } else {
+        QMessageBox::critical(this, "خطأ في الاستيراد",
+            "❌ فشل استيراد المنتجات:\n\n" + output);
+      }
+      loadProducts();
+      proc->deleteLater();
+    });
+
+    proc->start("python", {"-u", script, dbPath, file, imagesDir});
+  });
 
   loadCategories();
   loadProducts();

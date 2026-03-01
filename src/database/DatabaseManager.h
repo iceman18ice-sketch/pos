@@ -38,6 +38,7 @@ public:
                      const QString &brandEn = "", const QString &sizeInfo = "",
                      const QString &imagePath = "");
   bool deleteProduct(int id);
+  bool deleteAllProducts();
   bool updateProductStock(int productId, double quantity, bool add = true);
 
   // Categories

@@ -688,6 +688,10 @@ bool DatabaseManager::deleteProduct(int id) {
   return q.exec();
 }
 
+bool DatabaseManager::deleteAllProducts() {
+  return executeSQL("UPDATE Products SET active = 0");
+}
+
 bool DatabaseManager::updateProductStock(int productId, double quantity,
                                          bool add) {
   QSqlQuery q(m_db);
