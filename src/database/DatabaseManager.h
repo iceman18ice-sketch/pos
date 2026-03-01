@@ -202,6 +202,19 @@ public:
   int getLowStockCount();
   double getTodayExpenses();
 
+  // Database type
+  bool isMySQL() const { return m_isMySQL; }
+  QString dbType() const { return m_isMySQL ? "MySQL" : "SQLite"; }
+
+  // MySQL connection
+  bool initializeMySQL(const QString &host, int port,
+                       const QString &dbName, const QString &user,
+                       const QString &password);
+
+  // Export functions
+  bool exportDatabase(const QString &filePath);
+  bool exportProducts(const QString &filePath);
+
 private:
   DatabaseManager() = default;
   ~DatabaseManager();
@@ -210,9 +223,11 @@ private:
 
   bool createTables();
   bool executeSQL(const QString &sql);
+  QString adaptSQL(const QString &sql); // Adapt SQL for current DB type
 
   QSqlDatabase m_db;
   int m_userId = 0;
   QString m_userName;
   QString m_userRole;
+  bool m_isMySQL = false;
 };

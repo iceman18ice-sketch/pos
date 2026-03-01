@@ -506,6 +506,146 @@ SettingsWidget::SettingsWidget(QWidget *parent) : QWidget(parent) {
   zatcaScroll->setWidget(zatcaTab);
   tabs->addTab(zatcaScroll, "🧾 الفوترة الإلكترونية");
 
+  // ============================================================
+  // TAB 2: Database (قاعدة البيانات)
+  // ============================================================
+  auto *dbScroll = new QScrollArea;
+  dbScroll->setWidgetResizable(true);
+  auto *dbTab = new QWidget;
+  auto *dbLayout = new QVBoxLayout(dbTab);
+  dbLayout->setSpacing(12);
+  dbLayout->setContentsMargins(15, 15, 15, 15);
+
+  // --- Database Status ---
+  auto &db = DatabaseManager::instance();
+  auto *statusGroup = new QGroupBox("🗄️ حالة قاعدة البيانات");
+  statusGroup->setStyleSheet(compGroup->styleSheet());
+  auto *statusLayout = new QFormLayout(statusGroup);
+  auto *dbTypeLabel = new QLabel(db.isMySQL() ? "🟢 MySQL (متصل)" : "🔵 SQLite (محلي)");
+  dbTypeLabel->setStyleSheet("font-size: 15px; font-weight: bold; padding: 8px;");
+  statusLayout->addRow("نوع القاعدة:", dbTypeLabel);
+  dbLayout->addWidget(statusGroup);
+
+  // --- MySQL Connection ---
+  auto *mysqlGroup = new QGroupBox("🐬 اتصال MySQL (اختياري)");
+  mysqlGroup->setStyleSheet(compGroup->styleSheet());
+  auto *mysqlLayout = new QFormLayout(mysqlGroup);
+  mysqlLayout->setSpacing(8);
+
+  auto *mysqlHost = new QLineEdit("localhost");
+  mysqlHost->setPlaceholderText("مثال: localhost أو 192.168.1.100");
+  auto *mysqlPort = new QLineEdit("3306");
+  auto *mysqlDbName = new QLineEdit("pos_database");
+  auto *mysqlUser = new QLineEdit("root");
+  auto *mysqlPass = new QLineEdit;
+  mysqlPass->setEchoMode(QLineEdit::Password);
+  mysqlPass->setPlaceholderText("كلمة مرور MySQL");
+
+  mysqlLayout->addRow("🖥️ Host:", mysqlHost);
+  mysqlLayout->addRow("🔌 Port:", mysqlPort);
+  mysqlLayout->addRow("📁 اسم القاعدة:", mysqlDbName);
+  mysqlLayout->addRow("👤 المستخدم:", mysqlUser);
+  mysqlLayout->addRow("🔒 كلمة السر:", mysqlPass);
+
+  auto *connectMySqlBtn = new QPushButton("🐬 اتصال بـ MySQL");
+  connectMySqlBtn->setCursor(Qt::PointingHandCursor);
+  connectMySqlBtn->setMinimumHeight(45);
+  connectMySqlBtn->setStyleSheet(
+      "font-size: 15px; font-weight: bold; "
+      "background: qlineargradient(x1:0,y1:0,x2:1,y2:0, "
+      "stop:0 #0078D7, stop:1 #00BCF2); "
+      "color: white; border-radius: 10px; border: none; padding: 10px;");
+  connect(connectMySqlBtn, &QPushButton::clicked,
+      [=, &db]() {
+    QString h = mysqlHost->text().trimmed();
+    int p = mysqlPort->text().toInt();
+    QString d = mysqlDbName->text().trimmed();
+    QString u = mysqlUser->text().trimmed();
+    QString pw = mysqlPass->text();
+
+    if (h.isEmpty() || d.isEmpty() || u.isEmpty()) {
+      QMessageBox::warning(this, "خطأ", "الرجاء تعبئة جميع الحقول!");
+      return;
+    }
+
+    connectMySqlBtn->setText("⏳ جاري الاتصال...");
+    connectMySqlBtn->setEnabled(false);
+
+    if (db.initializeMySQL(h, p, d, u, pw)) {
+      dbTypeLabel->setText("🟢 MySQL (متصل) ✅");
+      QMessageBox::information(this, "نجح!", "تم الاتصال بـ MySQL بنجاح! 🎉\n\n"
+          "تم إنشاء جميع الجداول تلقائياً.");
+    } else {
+      QMessageBox::critical(this, "فشل", "❌ فشل الاتصال بـ MySQL!\n\n"
+          "تأكد من:\n"
+          "- MySQL Server شغّال\n"
+          "- البيانات صحيحة\n"
+          "- MySQL ODBC Driver مثبّت\n\n"
+          "البرنامج سيكمل على SQLite.");
+    }
+    connectMySqlBtn->setText("🐬 اتصال بـ MySQL");
+    connectMySqlBtn->setEnabled(true);
+  });
+  mysqlLayout->addRow(connectMySqlBtn);
+  dbLayout->addWidget(mysqlGroup);
+
+  // --- Export Section ---
+  auto *exportGroup = new QGroupBox("📤 تصدير البيانات");
+  exportGroup->setStyleSheet(compGroup->styleSheet());
+  auto *exportLayout = new QVBoxLayout(exportGroup);
+  exportLayout->setSpacing(10);
+
+  // Export Database
+  auto *exportDbBtn = new QPushButton("💾 تصدير نسخة احتياطية من القاعدة");
+  exportDbBtn->setCursor(Qt::PointingHandCursor);
+  exportDbBtn->setMinimumHeight(45);
+  exportDbBtn->setStyleSheet(
+      "font-size: 14px; font-weight: bold; "
+      "background: qlineargradient(x1:0,y1:0,x2:1,y2:0, "
+      "stop:0 #10B981, stop:1 #34D399); "
+      "color: white; border-radius: 10px; border: none; padding: 10px;");
+  connect(exportDbBtn, &QPushButton::clicked, [this, &db]() {
+    QString ext = db.isMySQL() ? "SQL Files (*.sql)" : "Database Files (*.db)";
+    QString defName = db.isMySQL() ? "pos_backup.sql" : "pos_backup.db";
+    QString path = QFileDialog::getSaveFileName(this,
+        "تصدير قاعدة البيانات", defName, ext);
+    if (path.isEmpty()) return;
+    if (db.exportDatabase(path)) {
+      QMessageBox::information(this, "تم!", "✅ تم تصدير قاعدة البيانات بنجاح إلى:\n" + path);
+    } else {
+      QMessageBox::critical(this, "خطأ", "❌ فشل تصدير قاعدة البيانات!");
+    }
+  });
+  exportLayout->addWidget(exportDbBtn);
+
+  // Export Products
+  auto *exportProductsBtn = new QPushButton("📋 تصدير قائمة المنتجات (CSV)");
+  exportProductsBtn->setCursor(Qt::PointingHandCursor);
+  exportProductsBtn->setMinimumHeight(45);
+  exportProductsBtn->setStyleSheet(
+      "font-size: 14px; font-weight: bold; "
+      "background: qlineargradient(x1:0,y1:0,x2:1,y2:0, "
+      "stop:0 #6366F1, stop:1 #818CF8); "
+      "color: white; border-radius: 10px; border: none; padding: 10px;");
+  connect(exportProductsBtn, &QPushButton::clicked, [this, &db]() {
+    QString path = QFileDialog::getSaveFileName(this,
+        "تصدير قائمة المنتجات", "products.csv", "CSV Files (*.csv)");
+    if (path.isEmpty()) return;
+    if (db.exportProducts(path)) {
+      QMessageBox::information(this, "تم!", "✅ تم تصدير قائمة المنتجات بنجاح!\n\n"
+          "الملف: " + path + "\n\n"
+          "يمكنك فتحه ببرنامج Excel.");
+    } else {
+      QMessageBox::critical(this, "خطأ", "❌ فشل تصدير قائمة المنتجات!");
+    }
+  });
+  exportLayout->addWidget(exportProductsBtn);
+  dbLayout->addWidget(exportGroup);
+
+  dbLayout->addStretch();
+  dbScroll->setWidget(dbTab);
+  tabs->addTab(dbScroll, "🗄️ قاعدة البيانات");
+
   layout->addWidget(tabs);
 
   loadSettings();

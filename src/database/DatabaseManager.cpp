@@ -1,7 +1,10 @@
 #include "DatabaseManager.h"
 #include <QCryptographicHash>
 #include <QDateTime>
+#include <QSqlRecord>
 #include <QStandardPaths>
+#include <QStringConverter>
+#include <QTextStream>
 
 DatabaseManager &DatabaseManager::instance() {
   static DatabaseManager inst;
@@ -419,10 +422,151 @@ CREATE TABLE IF NOT EXISTS Maintenance (
 
 bool DatabaseManager::executeSQL(const QString &sql) {
   QSqlQuery q(m_db);
-  if (!q.exec(sql)) {
-    qWarning() << "SQL Error:" << q.lastError().text() << "\nQuery:" << sql;
+  QString adapted = adaptSQL(sql);
+  if (!q.exec(adapted)) {
+    // Don't warn for expected errors (duplicate column on ALTER TABLE, etc.)
+    QString err = q.lastError().text();
+    if (!err.contains("duplicate column", Qt::CaseInsensitive) &&
+        !err.contains("already exists", Qt::CaseInsensitive))
+      qWarning() << "SQL Error:" << err << "\nQuery:" << adapted;
     return false;
   }
+  return true;
+}
+
+QString DatabaseManager::adaptSQL(const QString &sql) {
+  if (!m_isMySQL)
+    return sql;
+
+  // Adapt SQLite SQL to MySQL
+  QString adapted = sql;
+  adapted.replace("AUTOINCREMENT", "AUTO_INCREMENT", Qt::CaseInsensitive);
+  adapted.replace("INTEGER PRIMARY KEY AUTO_INCREMENT",
+                  "INT PRIMARY KEY AUTO_INCREMENT", Qt::CaseInsensitive);
+  adapted.replace("INSERT OR IGNORE", "INSERT IGNORE", Qt::CaseInsensitive);
+  adapted.replace("INSERT OR REPLACE", "REPLACE", Qt::CaseInsensitive);
+  // REAL → DOUBLE for MySQL
+  adapted.replace(" REAL ", " DOUBLE ", Qt::CaseInsensitive);
+  adapted.replace(" REAL DEFAULT", " DOUBLE DEFAULT", Qt::CaseInsensitive);
+  return adapted;
+}
+
+bool DatabaseManager::initializeMySQL(const QString &host, int port,
+                                       const QString &dbName,
+                                       const QString &user,
+                                       const QString &password) {
+  // Close existing connection
+  if (m_db.isOpen())
+    m_db.close();
+
+  // Try QODBC first (always available in Qt)
+  QString connStr = QString("DRIVER={MySQL ODBC 8.0 Unicode Driver};"
+                            "SERVER=%1;PORT=%2;DATABASE=%3;"
+                            "USER=%4;PASSWORD=%5;CHARSET=utf8mb4;")
+                        .arg(host).arg(port).arg(dbName).arg(user).arg(password);
+
+  m_db = QSqlDatabase::addDatabase("QODBC");
+  m_db.setDatabaseName(connStr);
+
+  if (!m_db.open()) {
+    // Try with generic MySQL ODBC driver name
+    connStr = QString("DRIVER={MySQL ODBC Unicode Driver};"
+                      "SERVER=%1;PORT=%2;DATABASE=%3;"
+                      "USER=%4;PASSWORD=%5;CHARSET=utf8mb4;")
+                  .arg(host).arg(port).arg(dbName).arg(user).arg(password);
+    m_db.setDatabaseName(connStr);
+
+    if (!m_db.open()) {
+      qCritical() << "Cannot connect to MySQL:" << m_db.lastError().text();
+      return false;
+    }
+  }
+
+  m_isMySQL = true;
+
+  // Set MySQL defaults
+  QSqlQuery q(m_db);
+  q.exec("SET NAMES utf8mb4");
+  q.exec("SET CHARACTER SET utf8mb4");
+  q.exec("SET FOREIGN_KEY_CHECKS = 1");
+
+  return createTables();
+}
+
+bool DatabaseManager::exportDatabase(const QString &filePath) {
+  if (m_isMySQL) {
+    // For MySQL: export all tables as SQL INSERT statements
+    QFile file(filePath);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+      return false;
+
+    QTextStream out(&file);
+    out.setEncoding(QStringConverter::Utf8);
+    out << "-- POS System Database Export\n";
+    out << "-- Date: " << QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss") << "\n\n";
+
+    QStringList tables = m_db.tables();
+    for (const QString &table : tables) {
+      QSqlQuery q(m_db);
+      q.exec("SELECT * FROM " + table);
+      while (q.next()) {
+        QStringList values;
+        for (int i = 0; i < q.record().count(); i++) {
+          QVariant v = q.value(i);
+          if (v.isNull())
+            values << "NULL";
+          else
+            values << "'" + v.toString().replace("'", "''") + "'";
+        }
+        out << "INSERT INTO " << table << " VALUES (" << values.join(",") << ");\n";
+      }
+      out << "\n";
+    }
+    file.close();
+    return true;
+  } else {
+    // For SQLite: simply copy the .db file
+    QString dbPath = m_db.databaseName();
+    return QFile::copy(dbPath, filePath);
+  }
+}
+
+bool DatabaseManager::exportProducts(const QString &filePath) {
+  QFile file(filePath);
+  if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    return false;
+
+  // UTF-8 BOM for Excel Arabic support
+  QTextStream out(&file);
+  out.setEncoding(QStringConverter::Utf8);
+  out << "\xEF\xBB\xBF";
+
+  // CSV header
+  out << "الباركود,اسم المنتج,اسم المنتج (إنجليزي),التصنيف,الوحدة,"
+      << "سعر الشراء,سعر البيع,نسبة الضريبة,الحد الأدنى,المخزون الحالي,"
+      << "الماركة (عربي),الماركة (إنجليزي),الحجم\n";
+
+  QSqlQuery q(m_db);
+  q.exec("SELECT p.barcode, p.name, p.name_en, "
+         "COALESCE(c.name,''), COALESCE(u.name,''), "
+         "p.buy_price, p.sell_price, p.tax_rate, "
+         "p.min_quantity, p.current_stock, "
+         "p.brand_ar, p.brand_en, p.size_info "
+         "FROM Products p "
+         "LEFT JOIN Categories c ON p.category_id = c.id "
+         "LEFT JOIN Units u ON p.unit_id = u.id "
+         "WHERE p.active = 1 ORDER BY p.name");
+
+  while (q.next()) {
+    QStringList row;
+    for (int i = 0; i < q.record().count(); i++) {
+      QString val = q.value(i).toString().replace("\"", "\"\"");
+      row << "\"" + val + "\"";
+    }
+    out << row.join(",") << "\n";
+  }
+
+  file.close();
   return true;
 }
 
