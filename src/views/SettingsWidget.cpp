@@ -446,8 +446,12 @@ SettingsWidget::SettingsWidget(QWidget *parent) : QWidget(parent) {
     progress->setMinimumWidth(400);
     progress->show();
 
-    connect(proc, &QProcess::readyReadStandardOutput, [proc, progress]() {
+    // Accumulate all output
+    auto *allOutput = new QStringList;
+
+    connect(proc, &QProcess::readyReadStandardOutput, [proc, progress, allOutput]() {
       QString out = QString::fromUtf8(proc->readAll());
+      allOutput->append(out);
       for (const QString &line : out.split('\n')) {
         if (line.startsWith("STEP:")) {
           QStringList parts = line.split(':');
@@ -465,9 +469,13 @@ SettingsWidget::SettingsWidget(QWidget *parent) : QWidget(parent) {
       progress->close();
       progress->deleteLater();
 
-      QString output = QString::fromUtf8(proc->readAll());
+      // Get any remaining output + accumulated
+      QString remaining = QString::fromUtf8(proc->readAll());
+      if (!remaining.isEmpty()) allOutput->append(remaining);
+      QString output = allOutput->join("");
+      delete allOutput;
 
-      if (code == 0 && !output.contains("FAILED:")) {
+      if (code == 0 && !output.contains("FAILED:") && !output.contains("ERROR:")) {
         m_zatcaStatus->setText("🟢 مربوط بنجاح مع ZATCA ✅");
         m_zatcaStatus->setStyleSheet(
             "font-size: 15px; font-weight: bold; color: #10B981; "
